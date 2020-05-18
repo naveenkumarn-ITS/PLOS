@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_oyFOsJjQEeqPIpiQgXxXnA">
+    <contextParameter comment="" name="bucket_name" prompt="bucket_name?" promptNeeded="false" type="id_String" value="plos-data-talend-em" xmi:id="_oyFOsZjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="dataset" prompt="dataset?" promptNeeded="false" type="id_String" value="PLOSDL_DEV" xmi:id="_oyFOspjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="GCS_Filepath" prompt="GCS_Filepath?" promptNeeded="false" type="id_String" value="gs://plos-data-talend-em/" xmi:id="_oyFOs5jQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="GCS_AccessKey" prompt="GCS_AccessKey?" promptNeeded="false" type="id_String" value="GOOG3ER2KFMJUKRJBTDXTHWR" xmi:id="_oyFOtJjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="GCS_SecretKey" prompt="GCS_SecretKey?" promptNeeded="false" type="id_String" value="DTorJfwAOHaO4QScGYTnesCUALodPrhYpuk4Cejj" xmi:id="_oyFOtZjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="resource_file_ServiceAccountKey" prompt="resource_file_ServiceAccountKey?" promptNeeded="false" type="id_String" value="C:/Users/admin/Desktop/PLOS/Source_file/plos-data-2357502552d3.json" xmi:id="_oyFOtpjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="Local_filename" prompt="Local_filename?" promptNeeded="false" type="id_String" value="/opt/talend/ipaas/rt-flow/TalendJobServersFile/repository/" xmi:id="_oyFOt5jQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="database_Name" prompt="database_Name?" promptNeeded="false" type="id_String" value="" xmi:id="_oyFOuJjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="startdate" prompt="startdate?" promptNeeded="false" type="id_String" value="" xmi:id="_oyFOuZjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="Enddate" prompt="Enddate?" promptNeeded="false" type="id_String" value="" xmi:id="_oyFOupjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="project_id" prompt="project_id?" promptNeeded="false" type="id_String" value="plos-data" xmi:id="_oyFOu5jQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="Audit_Dataset" prompt="Audit_Dataset?" promptNeeded="false" type="id_String" value="RUNBOOK_DEV" xmi:id="_oyFOvJjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="Update_deleted_id" prompt="Update_deleted_id?" promptNeeded="false" type="id_String" value="&quot;00,&quot;" xmi:id="_oyFOvZjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="ControlTable_name" prompt="ControlTable_name?" promptNeeded="false" type="id_String" value="CONTROL_TABLE" xmi:id="_oyFOvpjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="AuditTable_name" prompt="AuditTable_name?" promptNeeded="false" type="id_String" value="AUDIT_LOG" xmi:id="_oyFOv5jQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="ErrorLogTable_name" prompt="ErrorLogTable_name?" promptNeeded="false" type="id_String" value="ERROR_LOG" xmi:id="_oyFOwJjQEeqPIpiQgXxXnA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Test" xmi:id="_oyFOwZjQEeqPIpiQgXxXnA">
+    <contextParameter comment="" name="bucket_name" prompt="bucket_name?" promptNeeded="false" type="id_String" value="plos-data-talend-em/test" xmi:id="_oyFOwpjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="dataset" prompt="dataset?" promptNeeded="false" type="id_String" value="PLOSDL_TEST" xmi:id="_oyFOw5jQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="GCS_Filepath" prompt="GCS_Filepath?" promptNeeded="false" type="id_String" value="gs://plos-data-talend-em/test/" xmi:id="_oyFOxJjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="GCS_AccessKey" prompt="GCS_AccessKey?" promptNeeded="false" type="id_String" value="GOOG3ER2KFMJUKRJBTDXTHWR" xmi:id="_oyFOxZjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="GCS_SecretKey" prompt="GCS_SecretKey?" promptNeeded="false" type="id_String" value="DTorJfwAOHaO4QScGYTnesCUALodPrhYpuk4Cejj" xmi:id="_oyFOxpjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="resource_file_ServiceAccountKey" prompt="resource_file_ServiceAccountKey?" promptNeeded="false" type="id_String" value="" xmi:id="_oyFOx5jQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="Local_filename" prompt="Local_filename?" promptNeeded="false" type="id_String" value="/opt/talend/ipaas/rt-flow/TalendJobServersFile/repository/test/" xmi:id="_oyFOyJjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="database_Name" prompt="database_Name?" promptNeeded="false" type="id_String" value="" xmi:id="_oyFOyZjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="startdate" prompt="startdate?" promptNeeded="false" type="id_String" value="" xmi:id="_oyFOypjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="Enddate" prompt="Enddate?" promptNeeded="false" type="id_String" value="" xmi:id="_oyFOy5jQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="project_id" prompt="project_id?" promptNeeded="false" type="id_String" value="plos-data" xmi:id="_oyFOzJjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="Audit_Dataset" prompt="Audit_Dataset?" promptNeeded="false" type="id_String" value="RUNBOOK_TEST" xmi:id="_oyFOzZjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="Update_deleted_id" prompt="Update_deleted_id?" promptNeeded="false" type="id_String" value="&quot;00,&quot;" xmi:id="_oyFOzpjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="ControlTable_name" prompt="ControlTable_name?" promptNeeded="false" type="id_String" value="CONTROL_TABLE" xmi:id="_oyFOz5jQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="AuditTable_name" prompt="AuditTable_name?" promptNeeded="false" type="id_String" value="AUDIT_LOG" xmi:id="_oyFO0JjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="ErrorLogTable_name" prompt="ErrorLogTable_name?" promptNeeded="false" type="id_String" value="ERROR_LOG" xmi:id="_oyFO0ZjQEeqPIpiQgXxXnA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Prod" xmi:id="_oyFO0pjQEeqPIpiQgXxXnA">
+    <contextParameter comment="" name="bucket_name" prompt="bucket_name?" promptNeeded="false" type="id_String" value="plos-data-talend-em/prod" xmi:id="_oyFO05jQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="dataset" prompt="dataset?" promptNeeded="false" type="id_String" value="PLOSDL" xmi:id="_oyFO1JjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="GCS_Filepath" prompt="GCS_Filepath?" promptNeeded="false" type="id_String" value="gs://plos-data-talend-em/prod/" xmi:id="_oyFO1ZjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="GCS_AccessKey" prompt="GCS_AccessKey?" promptNeeded="false" type="id_String" value="GOOG3ER2KFMJUKRJBTDXTHWR" xmi:id="_oyFO1pjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="GCS_SecretKey" prompt="GCS_SecretKey?" promptNeeded="false" type="id_String" value="DTorJfwAOHaO4QScGYTnesCUALodPrhYpuk4Cejj" xmi:id="_oyFO15jQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="resource_file_ServiceAccountKey" prompt="resource_file_ServiceAccountKey?" promptNeeded="false" type="id_String" value="" xmi:id="_oyFO2JjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="Local_filename" prompt="Local_filename?" promptNeeded="false" type="id_String" value="/opt/talend/ipaas/rt-flow/TalendJobServersFile/repository/prod/" xmi:id="_oyFO2ZjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="database_Name" prompt="database_Name?" promptNeeded="false" type="id_String" value="" xmi:id="_oyFO2pjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="startdate" prompt="startdate?" promptNeeded="false" type="id_String" value="" xmi:id="_oyFO25jQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="Enddate" prompt="Enddate?" promptNeeded="false" type="id_String" value="" xmi:id="_oyFO3JjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="project_id" prompt="project_id?" promptNeeded="false" type="id_String" value="plos-data" xmi:id="_oyFO3ZjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="Audit_Dataset" prompt="Audit_Dataset?" promptNeeded="false" type="id_String" value="RUNBOOK" xmi:id="_oyFO3pjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="Update_deleted_id" prompt="Update_deleted_id?" promptNeeded="false" type="id_String" value="&quot;00,&quot;" xmi:id="_oyFO35jQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="ControlTable_name" prompt="ControlTable_name?" promptNeeded="false" type="id_String" value="CONTROL_TABLE" xmi:id="_oyFO4JjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="AuditTable_name" prompt="AuditTable_name?" promptNeeded="false" type="id_String" value="AUDIT_LOG" xmi:id="_oyFO4ZjQEeqPIpiQgXxXnA"/>
+    <contextParameter comment="" name="ErrorLogTable_name" prompt="ErrorLogTable_name?" promptNeeded="false" type="id_String" value="ERROR_LOG" xmi:id="_oyFO4pjQEeqPIpiQgXxXnA"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3073b6a8-7c41-46d0-9a04-af4d230cb3d1"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>phT783h8b5+WpQToZEBK/SUv9IuNiyBOs8IxQd9BGRPE9F4u5yrKaWweInEF/yv49T5s4d+c6pqC
+q5lZNgsUwA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c7a9f36a-6bb8-40ed-b664-8cdce89bcc09"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>UrrKa2lvOWTkDbgFtosDoku1xAWLj1FX4GHwiazRewZuU7AGq6nGnbofbadmW5sVkhoQZZpfKq80
+ZpuuSjoqxQ==</DigestValue></Reference></SignedInfo><SignatureValue>ijpbBDCufnFYH8JOhcVHZww8MyHyrc4gNUWu/mECDdLyfYMpUKj9OFpVieqAcx8L5Ptg/YlyJ60N
+KqVqESqhWA3n3JEm2K/Fq/okz9PojABEErsiKU6X/gAL16tkBGwyV2IRNhCWX1akD455Jnc6b9HJ
+OJgCi5cAeshSQuEyoJyvo/qKkXhxlGhnW/UeK8K3khLl5ZOBwHZMjIVRl/CQjqNt/rIazuSKishD
+TBr+XdXtTd0t8Yki4ueziCBncYeijxnWXvh+QjtZVQ5QwPN6lgyMyWXXMqpSYONVLmyqVgH3z+j6
+MbsdabdxRNzA0MOGf8mtFe/tnzZF1cFIeE3ZNw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c7a9f36a-6bb8-40ed-b664-8cdce89bcc09" Target="#_3073b6a8-7c41-46d0-9a04-af4d230cb3d1"><Timestamp>2020-05-18 06:27:24</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

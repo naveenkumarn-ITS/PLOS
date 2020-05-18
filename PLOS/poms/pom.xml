@@ -10,6 +10,50 @@
   <url>http://www.talend.org/</url>
   <modules>
     <module>code/routines</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_dstatus_subjob_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_stathist_main_job_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_ddisposi_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_article_type_family_subjob_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_roleedit_main_job_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_authors_subjob_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_document_main_job_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_ddisposi_main_job_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_submission_fee_pointers_subjob_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_dcategor_subjob_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_article_type_family_main_job_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_stathist_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_authors_main_job_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_submission_fee_pointers_main_job_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_questionnaire_question_definition_main_job_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_section_subjob_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_decision_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_letter_subjob_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_dstatus_delete_job_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_decision_main_job_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_dcategor_delete_job_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_decision_delete_job_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_document_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_transmittal_custom_identifier_subjob_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_ddisposi_subjob_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_roleedit_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_dcategor_main_job_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_transmittal_custom_identifier_main_job_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_letter_main_job_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_people_main_job_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_ddisposi_delete_job_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_document_delete_job_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_section_main_job_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_dstatus_main_job_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_questionnaire_question_definition_subjob_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_stathist_delete_job_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_dcategor_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_roleedit_delete_job_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/master_job_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_pubdates_subjob_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_people_subjob_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_dstatus_0.1</module>
+    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/em_pubdates_delete_job_0.1</module>
+    <module>jobs/process/PLOS/Stage_master/stage_master_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
