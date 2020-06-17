@@ -27,20 +27,20 @@
     <contextParameter comment="" name="startdate" prompt="startdate?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="Update_deleted_id" prompt="Update_deleted_id?" promptNeeded="false" type="id_String" value="-100,"/>
     <contextParameter comment="" name="Mail_from" prompt="Mail_from?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="achitambaram@plos.org"/>
-    <contextParameter comment="" name="Mail_Password" prompt="Mail_Password?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_Password" value="enc:system.encryption.key.v1:Cb1KA2whnRMHZTzeLpMBrkpywgZVnW/0teA8T7wweX4VI+8R+w=="/>
+    <contextParameter comment="" name="Mail_Password" prompt="Mail_Password?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_Password" value="enc:system.encryption.key.v1:MNDGN5sw3Zdm7Y6wkgJgcqUg7Do7lEJlp3dVy8Nn1zDmMtcnrw=="/>
     <contextParameter comment="" name="Mail_Subject" prompt="Mail_Subject?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="Job_Status"/>
     <contextParameter comment="" name="Mail_To" prompt="Mail_To?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="alagu@itshoulders.com,jeyaram@itshoulders.com"/>
     <contextParameter comment="" name="Mail_To1" prompt="Mail_To1?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value=""/>
     <contextParameter comment="" name="Mail_Username" prompt="Mail_Username?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="alagu@itshoulders.com"/>
     <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="smtp.1and1.com"/>
     <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="587"/>
-    <contextParameter comment="" name="PLOS_11000_AdditionalParams" prompt="PLOS_11000_AdditionalParams?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Database" prompt="PLOS_11000_Database?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Login" prompt="PLOS_11000_Login?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="mother"/>
-    <contextParameter comment="" name="PLOS_11000_Password" prompt="PLOS_11000_Password?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_Password" value="enc:system.encryption.key.v1:79WxXdOgsRCf7WEGMhcIacs86xCXZIBVaVku314Jp0creA=="/>
-    <contextParameter comment="" name="PLOS_11000_Port" prompt="PLOS_11000_Port?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Schema" prompt="PLOS_11000_Schema?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Server" prompt="PLOS_11000_Server?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="customerreporting.editorialmanager.com:11000"/>
+    <contextParameter comment="" name="PLOS_EM_AdditionalParams" prompt="PLOS_EM_AdditionalParams?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Database" prompt="PLOS_EM_Database?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Login" prompt="PLOS_EM_Login?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="mother"/>
+    <contextParameter comment="" name="PLOS_EM_Password" prompt="PLOS_EM_Password?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_Password" value="enc:system.encryption.key.v1:vux+39kwRzFIUfFrchpPuguW3ODlBUXHN3QUGxFgH9ut2w=="/>
+    <contextParameter comment="" name="PLOS_EM_Port" prompt="PLOS_EM_Port?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Schema" prompt="PLOS_EM_Schema?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Server" prompt="PLOS_EM_Server?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="customerreporting.editorialmanager.com:11000"/>
   </context>
   <context confirmationNeeded="false" name="local">
     <contextParameter comment="" name="database_Name" prompt="database_Name?" promptNeeded="false" type="id_String" value=""/>
@@ -70,20 +70,20 @@
     <contextParameter comment="" name="startdate" prompt="startdate?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="Update_deleted_id" prompt="Update_deleted_id?" promptNeeded="false" type="id_String" value="-100,"/>
     <contextParameter comment="" name="Mail_from" prompt="Mail_from?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="achitambaram@plos.org"/>
-    <contextParameter comment="" name="Mail_Password" prompt="Mail_Password?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_Password" value="enc:system.encryption.key.v1:re94MMogABBcDakg1BfLap0pDU9OagZKukSkwSnQQV+BNQCGcA=="/>
+    <contextParameter comment="" name="Mail_Password" prompt="Mail_Password?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_Password" value="enc:system.encryption.key.v1:6boIqb+HJeVRMY34uCikm4gpLGjJ0F59peNBdpo7davnQHJrrg=="/>
     <contextParameter comment="" name="Mail_Subject" prompt="Mail_Subject?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="Job_Status"/>
     <contextParameter comment="" name="Mail_To" prompt="Mail_To?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="alagu@itshoulders.com,jeyaram@itshoulders.com"/>
     <contextParameter comment="" name="Mail_To1" prompt="Mail_To1?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value=""/>
     <contextParameter comment="" name="Mail_Username" prompt="Mail_Username?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="alagu@itshoulders.com"/>
     <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="smtp.1and1.com"/>
     <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="587"/>
-    <contextParameter comment="" name="PLOS_11000_AdditionalParams" prompt="PLOS_11000_AdditionalParams?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Database" prompt="PLOS_11000_Database?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Login" prompt="PLOS_11000_Login?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="mother"/>
-    <contextParameter comment="" name="PLOS_11000_Password" prompt="PLOS_11000_Password?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_Password" value="enc:system.encryption.key.v1:FOSHgxaVTZajW0oqaIwWAbXUzJsyMLy+EdD+/1IxeavX2A=="/>
-    <contextParameter comment="" name="PLOS_11000_Port" prompt="PLOS_11000_Port?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Schema" prompt="PLOS_11000_Schema?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Server" prompt="PLOS_11000_Server?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="customerreporting.editorialmanager.com:11000"/>
+    <contextParameter comment="" name="PLOS_EM_AdditionalParams" prompt="PLOS_EM_AdditionalParams?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Database" prompt="PLOS_EM_Database?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Login" prompt="PLOS_EM_Login?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="mother"/>
+    <contextParameter comment="" name="PLOS_EM_Password" prompt="PLOS_EM_Password?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_Password" value="enc:system.encryption.key.v1:NMOKpPFENihrfCaLqjtgmepAOknsjdGx46HlwDM8Wmejgg=="/>
+    <contextParameter comment="" name="PLOS_EM_Port" prompt="PLOS_EM_Port?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Schema" prompt="PLOS_EM_Schema?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Server" prompt="PLOS_EM_Server?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="customerreporting.editorialmanager.com:11000"/>
   </context>
   <context confirmationNeeded="false" name="Prod">
     <contextParameter comment="" name="database_Name" prompt="database_Name?" promptNeeded="false" type="id_String" value=""/>
@@ -113,20 +113,20 @@
     <contextParameter comment="" name="startdate" prompt="startdate?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="Update_deleted_id" prompt="Update_deleted_id?" promptNeeded="false" type="id_String" value="-100,"/>
     <contextParameter comment="" name="Mail_from" prompt="Mail_from?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="achitambaram@plos.org"/>
-    <contextParameter comment="" name="Mail_Password" prompt="Mail_Password?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_Password" value="enc:system.encryption.key.v1:cRrdNlP21c44D4iwOOEbipWgWOPEzEU5zzreDWGJgn8PUIwDdA=="/>
+    <contextParameter comment="" name="Mail_Password" prompt="Mail_Password?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_Password" value="enc:system.encryption.key.v1:32DezkXxjOfio7ziHZP7gWi1IMzxZTMfzRa+t9Q0lW5l48j6sA=="/>
     <contextParameter comment="" name="Mail_Subject" prompt="Mail_Subject?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="Job_Status"/>
     <contextParameter comment="" name="Mail_To" prompt="Mail_To?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="alagu@itshoulders.com,jeyaram@itshoulders.com"/>
     <contextParameter comment="" name="Mail_To1" prompt="Mail_To1?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="alagu@itshoulders.com,jeyaram@itshoulders.com,naveenkumarn@itshoulders.com"/>
     <contextParameter comment="" name="Mail_Username" prompt="Mail_Username?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="alagu@itshoulders.com"/>
     <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="smtp.1and1.com"/>
     <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="587"/>
-    <contextParameter comment="" name="PLOS_11000_AdditionalParams" prompt="PLOS_11000_AdditionalParams?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Database" prompt="PLOS_11000_Database?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Login" prompt="PLOS_11000_Login?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="speedy"/>
-    <contextParameter comment="" name="PLOS_11000_Password" prompt="PLOS_11000_Password?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_Password" value="enc:system.encryption.key.v1:xXCrTO5xl2LzSExDt92VXSPgl5/gmtIdkvuw+RDY9ILt8Ew1"/>
-    <contextParameter comment="" name="PLOS_11000_Port" prompt="PLOS_11000_Port?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Schema" prompt="PLOS_11000_Schema?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Server" prompt="PLOS_11000_Server?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="customerreporting.editorialmanager.com:12000"/>
+    <contextParameter comment="" name="PLOS_EM_AdditionalParams" prompt="PLOS_EM_AdditionalParams?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Database" prompt="PLOS_EM_Database?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Login" prompt="PLOS_EM_Login?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="speedy"/>
+    <contextParameter comment="" name="PLOS_EM_Password" prompt="PLOS_EM_Password?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_Password" value="enc:system.encryption.key.v1:fCaHmLy6kjba9IlkC/bmn2ixvC+DBe+dCEYU8ZuxWWNZuE32"/>
+    <contextParameter comment="" name="PLOS_EM_Port" prompt="PLOS_EM_Port?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Schema" prompt="PLOS_EM_Schema?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Server" prompt="PLOS_EM_Server?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="customerreporting.editorialmanager.com:12000"/>
   </context>
   <context confirmationNeeded="false" name="Test">
     <contextParameter comment="" name="database_Name" prompt="database_Name?" promptNeeded="false" type="id_String" value=""/>
@@ -156,20 +156,20 @@
     <contextParameter comment="" name="startdate" prompt="startdate?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="Update_deleted_id" prompt="Update_deleted_id?" promptNeeded="false" type="id_String" value="-100,"/>
     <contextParameter comment="" name="Mail_from" prompt="Mail_from?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="achitambaram@plos.org"/>
-    <contextParameter comment="" name="Mail_Password" prompt="Mail_Password?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_Password" value="enc:system.encryption.key.v1:fELGqZk7tso1MrsgqXM6MSgwXbSWq5IZ166sXI44NXPniYB0+Q=="/>
+    <contextParameter comment="" name="Mail_Password" prompt="Mail_Password?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_Password" value="enc:system.encryption.key.v1:TTjGvwzhGjaYDgnFDP2AcK8eFFCL0ksspHcWlI9pq9q2hXN0FA=="/>
     <contextParameter comment="" name="Mail_Subject" prompt="Mail_Subject?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="Job_Status"/>
     <contextParameter comment="" name="Mail_To" prompt="Mail_To?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="alagu@itshoulders.com,jeyaram@itshoulders.com"/>
     <contextParameter comment="" name="Mail_To1" prompt="Mail_To1?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value=""/>
     <contextParameter comment="" name="Mail_Username" prompt="Mail_Username?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="alagu@itshoulders.com"/>
     <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="smtp.1and1.com"/>
     <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="587"/>
-    <contextParameter comment="" name="PLOS_11000_AdditionalParams" prompt="PLOS_11000_AdditionalParams?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Database" prompt="PLOS_11000_Database?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Login" prompt="PLOS_11000_Login?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="mother"/>
-    <contextParameter comment="" name="PLOS_11000_Password" prompt="PLOS_11000_Password?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_Password" value="enc:system.encryption.key.v1:cEbd7AqXwi5LeoMlraKpwkpFQ2A5AQSNl5eCDANME4VCdQ=="/>
-    <contextParameter comment="" name="PLOS_11000_Port" prompt="PLOS_11000_Port?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Schema" prompt="PLOS_11000_Schema?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Server" prompt="PLOS_11000_Server?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="customerreporting.editorialmanager.com:11000"/>
+    <contextParameter comment="" name="PLOS_EM_AdditionalParams" prompt="PLOS_EM_AdditionalParams?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Database" prompt="PLOS_EM_Database?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Login" prompt="PLOS_EM_Login?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="mother"/>
+    <contextParameter comment="" name="PLOS_EM_Password" prompt="PLOS_EM_Password?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_Password" value="enc:system.encryption.key.v1:YKfxbw6YVUTpXdsF3NyrlE8QohQJg6aebhSLGHuD5XJP4A=="/>
+    <contextParameter comment="" name="PLOS_EM_Port" prompt="PLOS_EM_Port?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Schema" prompt="PLOS_EM_Schema?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Server" prompt="PLOS_EM_Server?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="customerreporting.editorialmanager.com:11000"/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -213,7 +213,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:EOV3PepXN01XD/w+rYjKioxq/QHyQikkOkgDDu4S"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:DsFGvQxhJllOAKkfla3RVfLUv+3YsmP5XB5AfCQq"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -228,7 +228,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/admin/Desktop/PLOS/Job_backups/.metadata&quot;"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;D:/Stuffs/Talend-Studio-20200219_1130-V7.3.1/workspace/.metadata&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
@@ -248,7 +248,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:JK+Cg/0wsygm04A8gUzntM8J5mFbwR0+nU2PV7jt"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Q5WALS+qaEVQ3zZ7pInAefB8ZniR7d1lUI0TadS8"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -340,7 +340,6 @@
     <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT"/>
     <metadata connector="FLOW" name="tRunJob_1"/>
   </node>
   <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="224">
@@ -364,7 +363,6 @@
     <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT"/>
     <metadata connector="FLOW" name="tRunJob_2"/>
   </node>
   <node componentName="tBigQuerySQLRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="64">
@@ -373,7 +371,7 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:K83VYoXrcUg65MOOtOmFH/A63HT8XxRe6V9M2mAi"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:tfkF1uiIN5OOcy4NAG+q1xM0tXGA/FfnveJGPQ5V"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
@@ -424,13 +422,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5c1cf00d-9dd6-49bf-b4cb-07c491a42104"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>fynDy0lc8dEnRrrtINdgxsQjmcloscFr4ecLwzbQFBbHKzygPQUUnEH6cstTbKkV9MVAwWLGUoGU&#13;
-2PRNmIxxoQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_09fcf764-c1b3-464b-bb06-97f27bfdc78b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>yKjmCYhSWh9Kz2Kmf/PxS6TpY5ZNjzuinjy/Fh5gkG5qLM3qq06UYn5sXf2XYkTexy8eSkXwqzGU&#13;
-xMnkmJ8aZA==</DigestValue></Reference></SignedInfo><SignatureValue>fbD/9AJvaxhd41K3ftpw49qkcQCEZaCGlMKLlmDjZZDcihJqbO6FZht5WR/VMZ5eFyohID0jG9j0&#13;
-SP3QuyfxBDPEEAU/GswHlD7RX0qPKlxi5RWHCroMBfTiAu4AFLiQGsU3xDV373L0w52lAieBFLSj&#13;
-dxnrh6lAooKNS5bgIpcY6ouc/FtXfyj5MBDEVAN9N48Yzyhz9KBI6ijG22DOfz8Jw47ed6PNqHnT&#13;
-wUkNaofRIglCSdz1QbxWUaliXbujbE1AURPt/vNKFdki/HRUWf8aTvyy87twU1FcmmWW0EIwfl3V&#13;
-jld4R4JtSx1yGEGfaM6tfe+24EXDpaAQ6OYjXw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3065ecc5-f0b3-4aa4-a613-9850c3af006b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ovgDtkiABcsi4DaI8fGSf19ji5XyoI4VOlpDcKnrTU6b4S0FQSGm7pLFKHpTvGQCuTdQAUtx77zC&#13;
+sjpBbP1b1A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4ccb62a6-669b-4676-aee9-a53af2735737"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>d1PJgb+LUOf680gj9an4PbZ2u6y5r5w+lz/KeWMQyabABKysXTLhLXwsbFPcVQXV0qWimP64Gn/u&#13;
+Hv7MT7kEMA==</DigestValue></Reference></SignedInfo><SignatureValue>foelcSKgz+Tq4bIEDav1kGMqFdhBhpWkpZqXBPrt89y+iYXmno83bF8eG/khRKB1UzrLBuqrQLUU&#13;
+9r2HBznWkc2CtQK414XUu5lutV6taKa9WEKQx2M/t6PhcMDZ+Hg96S7r+oMYrK7DyXPppgz2FQe3&#13;
+B7mRHEOkCwsp3AyOHQr+Dhe71vQ1XtVc8PXzKeYDdvR2FH9Y2lLRwZUvS/TLN14ZHjY6iLkHV6tC&#13;
+uhQAvGgOIroUZiaZ4YUwxpQG/+3A7aLT2pz7TRbn8HrqmsRnq2+AYXpclKtOxYNTDjiKi31cQnv2&#13;
+hUBo8Fa4amhyYBgv0te0GcLWpThx7/1eSYSwag==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -452,4 +450,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_09fcf764-c1b3-464b-bb06-97f27bfdc78b" Target="#_5c1cf00d-9dd6-49bf-b4cb-07c491a42104"><Timestamp>2020-06-17 07:43:41</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4ccb62a6-669b-4676-aee9-a53af2735737" Target="#_3065ecc5-f0b3-4aa4-a613-9850c3af006b"><Timestamp>2020-06-17 08:12:04</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

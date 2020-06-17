@@ -1,126 +1,126 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Prod" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="table_Name" prompt="table_Name?" promptNeeded="false" type="id_String" value="ROLEEDIT"/>
-    <contextParameter comment="" name="PLOS_11000_AdditionalParams" prompt="PLOS_11000_AdditionalParams?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Database" prompt="PLOS_11000_Database?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Login" prompt="PLOS_11000_Login?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="mother"/>
-    <contextParameter comment="" name="PLOS_11000_Password" prompt="PLOS_11000_Password?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_Password" value="enc:system.encryption.key.v1:HxdGrtVPEFAXUhBjXFY9/cqmt+FXIIibNkZaP/l/nF+ZPg=="/>
-    <contextParameter comment="" name="PLOS_11000_Port" prompt="PLOS_11000_Port?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Schema" prompt="PLOS_11000_Schema?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Server" prompt="PLOS_11000_Server?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="customerreporting.editorialmanager.com:11000"/>
+    <contextParameter comment="" name="PLOS_EM_AdditionalParams" prompt="PLOS_EM_AdditionalParams?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Database" prompt="PLOS_EM_Database?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Login" prompt="PLOS_EM_Login?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="mother"/>
+    <contextParameter comment="" name="PLOS_EM_Password" prompt="PLOS_EM_Password?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_Password" value="enc:system.encryption.key.v1:kq5En5IrcsJHZJPsXM0qxrF2VCKEsx1r0N/7aAjlwgS4ng=="/>
+    <contextParameter comment="" name="PLOS_EM_Port" prompt="PLOS_EM_Port?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Schema" prompt="PLOS_EM_Schema?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Server" prompt="PLOS_EM_Server?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="customerreporting.editorialmanager.com:11000"/>
     <contextParameter comment="" name="Target_Table" prompt="Target_Table?" promptNeeded="false" type="id_String" value="EM_ROLEEDIT"/>
     <contextParameter comment="" name="Temp_Table" prompt="Temp_Table?" promptNeeded="false" type="id_String" value="EM_ROLEEDIT_temp"/>
     <contextParameter comment="" name="Archive_Table" prompt="Archive_Table?" promptNeeded="false" type="id_String" value="EM_ROLEEDIT_ARCHIVE"/>
-    <contextParameter comment="" name="ControlTable_name" prompt="ControlTable_name?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="CONTROL_TABLE"/>
-    <contextParameter comment="" name="bucket_name" prompt="bucket_name?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="plos-data-talend-em"/>
-    <contextParameter comment="" name="Update_deleted_id" prompt="Update_deleted_id?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="-100,"/>
-    <contextParameter comment="" name="Local_filename" prompt="Local_filename?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="/opt/talend/ipaas/rt-flow/TalendJobServersFile/repository/"/>
-    <contextParameter comment="" name="startdate" prompt="startdate?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value=""/>
-    <contextParameter comment="" name="GCS_Filepath" prompt="GCS_Filepath?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="gs://plos-data-talend-em/"/>
-    <contextParameter comment="" name="Audit_Dataset" prompt="Audit_Dataset?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="RUNBOOK_DEV"/>
-    <contextParameter comment="" name="GCS_AccessKey" prompt="GCS_AccessKey?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="GOOG3ER2KFMJUKRJBTDXTHWR"/>
-    <contextParameter comment="" name="database_Name" prompt="database_Name?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value=""/>
-    <contextParameter comment="" name="resource_file_ServiceAccountKey" prompt="resource_file_ServiceAccountKey?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="C:/Users/admin/Desktop/PLOS/Source_file/plos-data-2357502552d3.json"/>
-    <contextParameter comment="" name="project_id" prompt="project_id?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="plos-data"/>
-    <contextParameter comment="" name="AuditTable_name" prompt="AuditTable_name?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="AUDIT_LOG"/>
-    <contextParameter comment="" name="deleted_id" prompt="deleted_id?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="-100,"/>
-    <contextParameter comment="" name="Enddate" prompt="Enddate?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value=""/>
+    <contextParameter comment="" name="ControlTable_name" prompt="ControlTable_name?" promptNeeded="false" type="id_String" value="CONTROL_TABLE"/>
+    <contextParameter comment="" name="bucket_name" prompt="bucket_name?" promptNeeded="false" type="id_String" value="plos-data-talend-em"/>
+    <contextParameter comment="" name="Update_deleted_id" prompt="Update_deleted_id?" promptNeeded="false" type="id_String" value="-100,"/>
+    <contextParameter comment="" name="Local_filename" prompt="Local_filename?" promptNeeded="false" type="id_String" value="/opt/talend/ipaas/rt-flow/TalendJobServersFile/repository/"/>
+    <contextParameter comment="" name="startdate" prompt="startdate?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="GCS_Filepath" prompt="GCS_Filepath?" promptNeeded="false" type="id_String" value="gs://plos-data-talend-em/"/>
+    <contextParameter comment="" name="Audit_Dataset" prompt="Audit_Dataset?" promptNeeded="false" type="id_String" value="RUNBOOK_DEV"/>
+    <contextParameter comment="" name="GCS_AccessKey" prompt="GCS_AccessKey?" promptNeeded="false" type="id_String" value="GOOG3ER2KFMJUKRJBTDXTHWR"/>
+    <contextParameter comment="" name="database_Name" prompt="database_Name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="resource_file_ServiceAccountKey" prompt="resource_file_ServiceAccountKey?" promptNeeded="false" type="id_String" value="C:/Users/admin/Desktop/PLOS/Source_file/plos-data-2357502552d3.json"/>
+    <contextParameter comment="" name="project_id" prompt="project_id?" promptNeeded="false" type="id_String" value="plos-data"/>
+    <contextParameter comment="" name="AuditTable_name" prompt="AuditTable_name?" promptNeeded="false" type="id_String" value="AUDIT_LOG"/>
+    <contextParameter comment="" name="deleted_id" prompt="deleted_id?" promptNeeded="false" type="id_String" value="-100,"/>
+    <contextParameter comment="" name="Enddate" prompt="Enddate?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="dataset" prompt="dataset?" promptNeeded="false" type="id_String" value="PLOSDL_DEV"/>
-    <contextParameter comment="" name="GCS_SecretKey" prompt="GCS_SecretKey?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="DTorJfwAOHaO4QScGYTnesCUALodPrhYpuk4Cejj"/>
-    <contextParameter comment="" name="ErrorLogTable_name" prompt="ErrorLogTable_name?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="ERROR_LOG"/>
+    <contextParameter comment="" name="GCS_SecretKey" prompt="GCS_SecretKey?" promptNeeded="false" type="id_String" value="DTorJfwAOHaO4QScGYTnesCUALodPrhYpuk4Cejj"/>
+    <contextParameter comment="" name="ErrorLogTable_name" prompt="ErrorLogTable_name?" promptNeeded="false" type="id_String" value="ERROR_LOG"/>
     <contextParameter comment="" name="updated_date" prompt="updated_date?" promptNeeded="false" type="id_Date" value=""/>
   </context>
   <context confirmationNeeded="false" name="local">
     <contextParameter comment="" name="table_Name" prompt="table_Name?" promptNeeded="false" type="id_String" value="ROLEEDIT"/>
-    <contextParameter comment="" name="PLOS_11000_AdditionalParams" prompt="PLOS_11000_AdditionalParams?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Database" prompt="PLOS_11000_Database?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Login" prompt="PLOS_11000_Login?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="mother"/>
-    <contextParameter comment="" name="PLOS_11000_Password" prompt="PLOS_11000_Password?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_Password" value="enc:system.encryption.key.v1:cyvf5zkaNrTwQGXr+WRZNBO8t/krUuPMfV+IevcVKL7mcQ=="/>
-    <contextParameter comment="" name="PLOS_11000_Port" prompt="PLOS_11000_Port?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Schema" prompt="PLOS_11000_Schema?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Server" prompt="PLOS_11000_Server?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="customerreporting.editorialmanager.com:11000"/>
+    <contextParameter comment="" name="PLOS_EM_AdditionalParams" prompt="PLOS_EM_AdditionalParams?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Database" prompt="PLOS_EM_Database?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Login" prompt="PLOS_EM_Login?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="mother"/>
+    <contextParameter comment="" name="PLOS_EM_Password" prompt="PLOS_EM_Password?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_Password" value="enc:system.encryption.key.v1:I1KKv58oeWIbhZEKWgkOpPq9N7+JckPI8SheRIKwYbwSYA=="/>
+    <contextParameter comment="" name="PLOS_EM_Port" prompt="PLOS_EM_Port?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Schema" prompt="PLOS_EM_Schema?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Server" prompt="PLOS_EM_Server?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="customerreporting.editorialmanager.com:11000"/>
     <contextParameter comment="" name="Target_Table" prompt="Target_Table?" promptNeeded="false" type="id_String" value="EM_ROLEEDIT"/>
     <contextParameter comment="" name="Temp_Table" prompt="Temp_Table?" promptNeeded="false" type="id_String" value="EM_ROLEEDIT_temp"/>
     <contextParameter comment="" name="Archive_Table" prompt="Archive_Table?" promptNeeded="false" type="id_String" value="EM_ROLEEDIT_ARCHIVE"/>
-    <contextParameter comment="" name="ControlTable_name" prompt="ControlTable_name?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="CONTROL_TABLE"/>
-    <contextParameter comment="" name="bucket_name" prompt="bucket_name?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="plos-data-talend-em"/>
-    <contextParameter comment="" name="Update_deleted_id" prompt="Update_deleted_id?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="-100,"/>
-    <contextParameter comment="" name="Local_filename" prompt="Local_filename?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="/opt/talend/ipaas/rt-flow/TalendJobServersFile/repository/"/>
-    <contextParameter comment="" name="startdate" prompt="startdate?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value=""/>
-    <contextParameter comment="" name="GCS_Filepath" prompt="GCS_Filepath?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="gs://plos-data-talend-em/"/>
-    <contextParameter comment="" name="Audit_Dataset" prompt="Audit_Dataset?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="RUNBOOK_DEV"/>
-    <contextParameter comment="" name="GCS_AccessKey" prompt="GCS_AccessKey?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="GOOG3ER2KFMJUKRJBTDXTHWR"/>
-    <contextParameter comment="" name="database_Name" prompt="database_Name?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value=""/>
-    <contextParameter comment="" name="resource_file_ServiceAccountKey" prompt="resource_file_ServiceAccountKey?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="C:/Users/admin/Desktop/PLOS/Source_file/plos-data-2357502552d3.json"/>
-    <contextParameter comment="" name="project_id" prompt="project_id?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="plos-data"/>
-    <contextParameter comment="" name="AuditTable_name" prompt="AuditTable_name?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="AUDIT_LOG"/>
-    <contextParameter comment="" name="deleted_id" prompt="deleted_id?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="-100,"/>
-    <contextParameter comment="" name="Enddate" prompt="Enddate?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value=""/>
+    <contextParameter comment="" name="ControlTable_name" prompt="ControlTable_name?" promptNeeded="false" type="id_String" value="CONTROL_TABLE"/>
+    <contextParameter comment="" name="bucket_name" prompt="bucket_name?" promptNeeded="false" type="id_String" value="plos-data-talend-em"/>
+    <contextParameter comment="" name="Update_deleted_id" prompt="Update_deleted_id?" promptNeeded="false" type="id_String" value="-100,"/>
+    <contextParameter comment="" name="Local_filename" prompt="Local_filename?" promptNeeded="false" type="id_String" value="/opt/talend/ipaas/rt-flow/TalendJobServersFile/repository/"/>
+    <contextParameter comment="" name="startdate" prompt="startdate?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="GCS_Filepath" prompt="GCS_Filepath?" promptNeeded="false" type="id_String" value="gs://plos-data-talend-em/"/>
+    <contextParameter comment="" name="Audit_Dataset" prompt="Audit_Dataset?" promptNeeded="false" type="id_String" value="RUNBOOK_DEV"/>
+    <contextParameter comment="" name="GCS_AccessKey" prompt="GCS_AccessKey?" promptNeeded="false" type="id_String" value="GOOG3ER2KFMJUKRJBTDXTHWR"/>
+    <contextParameter comment="" name="database_Name" prompt="database_Name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="resource_file_ServiceAccountKey" prompt="resource_file_ServiceAccountKey?" promptNeeded="false" type="id_String" value="C:/Users/admin/Desktop/PLOS/Source_file/plos-data-2357502552d3.json"/>
+    <contextParameter comment="" name="project_id" prompt="project_id?" promptNeeded="false" type="id_String" value="plos-data"/>
+    <contextParameter comment="" name="AuditTable_name" prompt="AuditTable_name?" promptNeeded="false" type="id_String" value="AUDIT_LOG"/>
+    <contextParameter comment="" name="deleted_id" prompt="deleted_id?" promptNeeded="false" type="id_String" value="-100,"/>
+    <contextParameter comment="" name="Enddate" prompt="Enddate?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="dataset" prompt="dataset?" promptNeeded="false" type="id_String" value="PLOSDL_DEV"/>
-    <contextParameter comment="" name="GCS_SecretKey" prompt="GCS_SecretKey?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="DTorJfwAOHaO4QScGYTnesCUALodPrhYpuk4Cejj"/>
-    <contextParameter comment="" name="ErrorLogTable_name" prompt="ErrorLogTable_name?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="ERROR_LOG"/>
+    <contextParameter comment="" name="GCS_SecretKey" prompt="GCS_SecretKey?" promptNeeded="false" type="id_String" value="DTorJfwAOHaO4QScGYTnesCUALodPrhYpuk4Cejj"/>
+    <contextParameter comment="" name="ErrorLogTable_name" prompt="ErrorLogTable_name?" promptNeeded="false" type="id_String" value="ERROR_LOG"/>
     <contextParameter comment="" name="updated_date" prompt="updated_date?" promptNeeded="false" type="id_Date" value=""/>
   </context>
   <context confirmationNeeded="false" name="Prod">
     <contextParameter comment="" name="table_Name" prompt="table_Name?" promptNeeded="false" type="id_String" value="ROLEEDIT"/>
-    <contextParameter comment="" name="PLOS_11000_AdditionalParams" prompt="PLOS_11000_AdditionalParams?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Database" prompt="PLOS_11000_Database?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Login" prompt="PLOS_11000_Login?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="speedy"/>
-    <contextParameter comment="" name="PLOS_11000_Password" prompt="PLOS_11000_Password?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_Password" value="enc:system.encryption.key.v1:fu06rhdPtD1mtGah/9+0YTxh2qqC+zivvYYfxwqWgc6NZHW9"/>
-    <contextParameter comment="" name="PLOS_11000_Port" prompt="PLOS_11000_Port?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Schema" prompt="PLOS_11000_Schema?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Server" prompt="PLOS_11000_Server?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="customerreporting.editorialmanager.com:12000"/>
+    <contextParameter comment="" name="PLOS_EM_AdditionalParams" prompt="PLOS_EM_AdditionalParams?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Database" prompt="PLOS_EM_Database?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Login" prompt="PLOS_EM_Login?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="speedy"/>
+    <contextParameter comment="" name="PLOS_EM_Password" prompt="PLOS_EM_Password?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_Password" value="enc:system.encryption.key.v1:buUfWiaiCTV9ICYwUlijRMJI/mQi4021FVmSh52IiZUPjAAc"/>
+    <contextParameter comment="" name="PLOS_EM_Port" prompt="PLOS_EM_Port?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Schema" prompt="PLOS_EM_Schema?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Server" prompt="PLOS_EM_Server?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="customerreporting.editorialmanager.com:12000"/>
     <contextParameter comment="" name="Target_Table" prompt="Target_Table?" promptNeeded="false" type="id_String" value="EM_ROLEEDIT"/>
     <contextParameter comment="" name="Temp_Table" prompt="Temp_Table?" promptNeeded="false" type="id_String" value="EM_ROLEEDIT_temp"/>
     <contextParameter comment="" name="Archive_Table" prompt="Archive_Table?" promptNeeded="false" type="id_String" value="EM_ROLEEDIT_ARCHIVE"/>
-    <contextParameter comment="" name="ControlTable_name" prompt="ControlTable_name?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="CONTROL_TABLE"/>
-    <contextParameter comment="" name="bucket_name" prompt="bucket_name?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="plos-data-talend-em/prod"/>
-    <contextParameter comment="" name="Update_deleted_id" prompt="Update_deleted_id?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="-100,"/>
-    <contextParameter comment="" name="Local_filename" prompt="Local_filename?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="/opt/talend/ipaas/rt-flow/TalendJobServersFile/repository/prod/"/>
-    <contextParameter comment="" name="startdate" prompt="startdate?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value=""/>
-    <contextParameter comment="" name="GCS_Filepath" prompt="GCS_Filepath?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="gs://plos-data-talend-em/prod/"/>
-    <contextParameter comment="" name="Audit_Dataset" prompt="Audit_Dataset?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="RUNBOOK"/>
-    <contextParameter comment="" name="GCS_AccessKey" prompt="GCS_AccessKey?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="GOOG3ER2KFMJUKRJBTDXTHWR"/>
-    <contextParameter comment="" name="database_Name" prompt="database_Name?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value=""/>
-    <contextParameter comment="" name="resource_file_ServiceAccountKey" prompt="resource_file_ServiceAccountKey?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value=""/>
-    <contextParameter comment="" name="project_id" prompt="project_id?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="plos-data"/>
-    <contextParameter comment="" name="AuditTable_name" prompt="AuditTable_name?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="AUDIT_LOG"/>
-    <contextParameter comment="" name="deleted_id" prompt="deleted_id?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="-100,"/>
-    <contextParameter comment="" name="Enddate" prompt="Enddate?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value=""/>
+    <contextParameter comment="" name="ControlTable_name" prompt="ControlTable_name?" promptNeeded="false" type="id_String" value="CONTROL_TABLE"/>
+    <contextParameter comment="" name="bucket_name" prompt="bucket_name?" promptNeeded="false" type="id_String" value="plos-data-talend-em/prod"/>
+    <contextParameter comment="" name="Update_deleted_id" prompt="Update_deleted_id?" promptNeeded="false" type="id_String" value="-100,"/>
+    <contextParameter comment="" name="Local_filename" prompt="Local_filename?" promptNeeded="false" type="id_String" value="/opt/talend/ipaas/rt-flow/TalendJobServersFile/repository/prod/"/>
+    <contextParameter comment="" name="startdate" prompt="startdate?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="GCS_Filepath" prompt="GCS_Filepath?" promptNeeded="false" type="id_String" value="gs://plos-data-talend-em/prod/"/>
+    <contextParameter comment="" name="Audit_Dataset" prompt="Audit_Dataset?" promptNeeded="false" type="id_String" value="RUNBOOK"/>
+    <contextParameter comment="" name="GCS_AccessKey" prompt="GCS_AccessKey?" promptNeeded="false" type="id_String" value="GOOG3ER2KFMJUKRJBTDXTHWR"/>
+    <contextParameter comment="" name="database_Name" prompt="database_Name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="resource_file_ServiceAccountKey" prompt="resource_file_ServiceAccountKey?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="project_id" prompt="project_id?" promptNeeded="false" type="id_String" value="plos-data"/>
+    <contextParameter comment="" name="AuditTable_name" prompt="AuditTable_name?" promptNeeded="false" type="id_String" value="AUDIT_LOG"/>
+    <contextParameter comment="" name="deleted_id" prompt="deleted_id?" promptNeeded="false" type="id_String" value="-100,"/>
+    <contextParameter comment="" name="Enddate" prompt="Enddate?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="dataset" prompt="dataset?" promptNeeded="false" type="id_String" value="PLOSDL"/>
-    <contextParameter comment="" name="GCS_SecretKey" prompt="GCS_SecretKey?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="DTorJfwAOHaO4QScGYTnesCUALodPrhYpuk4Cejj"/>
-    <contextParameter comment="" name="ErrorLogTable_name" prompt="ErrorLogTable_name?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="ERROR_LOG"/>
+    <contextParameter comment="" name="GCS_SecretKey" prompt="GCS_SecretKey?" promptNeeded="false" type="id_String" value="DTorJfwAOHaO4QScGYTnesCUALodPrhYpuk4Cejj"/>
+    <contextParameter comment="" name="ErrorLogTable_name" prompt="ErrorLogTable_name?" promptNeeded="false" type="id_String" value="ERROR_LOG"/>
     <contextParameter comment="" name="updated_date" prompt="updated_date?" promptNeeded="false" type="id_Date" value=""/>
   </context>
   <context confirmationNeeded="false" name="Test">
     <contextParameter comment="" name="table_Name" prompt="table_Name?" promptNeeded="false" type="id_String" value="ROLEEDIT"/>
-    <contextParameter comment="" name="PLOS_11000_AdditionalParams" prompt="PLOS_11000_AdditionalParams?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Database" prompt="PLOS_11000_Database?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Login" prompt="PLOS_11000_Login?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="mother"/>
-    <contextParameter comment="" name="PLOS_11000_Password" prompt="PLOS_11000_Password?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_Password" value="enc:system.encryption.key.v1:fGo+71F23UULHZCU5esKymivYhGFuYaHuyMTj8suauNjIQ=="/>
-    <contextParameter comment="" name="PLOS_11000_Port" prompt="PLOS_11000_Port?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Schema" prompt="PLOS_11000_Schema?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
-    <contextParameter comment="" name="PLOS_11000_Server" prompt="PLOS_11000_Server?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="customerreporting.editorialmanager.com:11000"/>
+    <contextParameter comment="" name="PLOS_EM_AdditionalParams" prompt="PLOS_EM_AdditionalParams?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Database" prompt="PLOS_EM_Database?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Login" prompt="PLOS_EM_Login?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="mother"/>
+    <contextParameter comment="" name="PLOS_EM_Password" prompt="PLOS_EM_Password?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_Password" value="enc:system.encryption.key.v1:k7y+QDhNYpvksVXf1ymrLJYkcLyadZWyTTENmKjYNbSZPg=="/>
+    <contextParameter comment="" name="PLOS_EM_Port" prompt="PLOS_EM_Port?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Schema" prompt="PLOS_EM_Schema?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_EM_Server" prompt="PLOS_EM_Server?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="customerreporting.editorialmanager.com:11000"/>
     <contextParameter comment="" name="Target_Table" prompt="Target_Table?" promptNeeded="false" type="id_String" value="EM_ROLEEDIT"/>
     <contextParameter comment="" name="Temp_Table" prompt="Temp_Table?" promptNeeded="false" type="id_String" value="EM_ROLEEDIT_temp"/>
     <contextParameter comment="" name="Archive_Table" prompt="Archive_Table?" promptNeeded="false" type="id_String" value="EM_ROLEEDIT_ARCHIVE"/>
-    <contextParameter comment="" name="ControlTable_name" prompt="ControlTable_name?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="CONTROL_TABLE"/>
-    <contextParameter comment="" name="bucket_name" prompt="bucket_name?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="plos-data-talend-em/test"/>
-    <contextParameter comment="" name="Update_deleted_id" prompt="Update_deleted_id?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="-100,"/>
-    <contextParameter comment="" name="Local_filename" prompt="Local_filename?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="/opt/talend/ipaas/rt-flow/TalendJobServersFile/repository/test/"/>
-    <contextParameter comment="" name="startdate" prompt="startdate?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value=""/>
-    <contextParameter comment="" name="GCS_Filepath" prompt="GCS_Filepath?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="gs://plos-data-talend-em/test/"/>
-    <contextParameter comment="" name="Audit_Dataset" prompt="Audit_Dataset?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="RUNBOOK_TEST"/>
-    <contextParameter comment="" name="GCS_AccessKey" prompt="GCS_AccessKey?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="GOOG3ER2KFMJUKRJBTDXTHWR"/>
-    <contextParameter comment="" name="database_Name" prompt="database_Name?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value=""/>
-    <contextParameter comment="" name="resource_file_ServiceAccountKey" prompt="resource_file_ServiceAccountKey?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value=""/>
-    <contextParameter comment="" name="project_id" prompt="project_id?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="plos-data"/>
-    <contextParameter comment="" name="AuditTable_name" prompt="AuditTable_name?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="AUDIT_LOG"/>
-    <contextParameter comment="" name="deleted_id" prompt="deleted_id?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="-100,"/>
-    <contextParameter comment="" name="Enddate" prompt="Enddate?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value=""/>
+    <contextParameter comment="" name="ControlTable_name" prompt="ControlTable_name?" promptNeeded="false" type="id_String" value="CONTROL_TABLE"/>
+    <contextParameter comment="" name="bucket_name" prompt="bucket_name?" promptNeeded="false" type="id_String" value="plos-data-talend-em/test"/>
+    <contextParameter comment="" name="Update_deleted_id" prompt="Update_deleted_id?" promptNeeded="false" type="id_String" value="-100,"/>
+    <contextParameter comment="" name="Local_filename" prompt="Local_filename?" promptNeeded="false" type="id_String" value="/opt/talend/ipaas/rt-flow/TalendJobServersFile/repository/test/"/>
+    <contextParameter comment="" name="startdate" prompt="startdate?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="GCS_Filepath" prompt="GCS_Filepath?" promptNeeded="false" type="id_String" value="gs://plos-data-talend-em/test/"/>
+    <contextParameter comment="" name="Audit_Dataset" prompt="Audit_Dataset?" promptNeeded="false" type="id_String" value="RUNBOOK_TEST"/>
+    <contextParameter comment="" name="GCS_AccessKey" prompt="GCS_AccessKey?" promptNeeded="false" type="id_String" value="GOOG3ER2KFMJUKRJBTDXTHWR"/>
+    <contextParameter comment="" name="database_Name" prompt="database_Name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="resource_file_ServiceAccountKey" prompt="resource_file_ServiceAccountKey?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="project_id" prompt="project_id?" promptNeeded="false" type="id_String" value="plos-data"/>
+    <contextParameter comment="" name="AuditTable_name" prompt="AuditTable_name?" promptNeeded="false" type="id_String" value="AUDIT_LOG"/>
+    <contextParameter comment="" name="deleted_id" prompt="deleted_id?" promptNeeded="false" type="id_String" value="-100,"/>
+    <contextParameter comment="" name="Enddate" prompt="Enddate?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="dataset" prompt="dataset?" promptNeeded="false" type="id_String" value="PLOSDL_TEST"/>
-    <contextParameter comment="" name="GCS_SecretKey" prompt="GCS_SecretKey?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="DTorJfwAOHaO4QScGYTnesCUALodPrhYpuk4Cejj"/>
-    <contextParameter comment="" name="ErrorLogTable_name" prompt="ErrorLogTable_name?" promptNeeded="false" repositoryContextId="_jc3qwI3eEeqGddocLFna6Q" type="id_String" value="ERROR_LOG"/>
+    <contextParameter comment="" name="GCS_SecretKey" prompt="GCS_SecretKey?" promptNeeded="false" type="id_String" value="DTorJfwAOHaO4QScGYTnesCUALodPrhYpuk4Cejj"/>
+    <contextParameter comment="" name="ErrorLogTable_name" prompt="ErrorLogTable_name?" promptNeeded="false" type="id_String" value="ERROR_LOG"/>
     <contextParameter comment="" name="updated_date" prompt="updated_date?" promptNeeded="false" type="id_Date" value=""/>
   </context>
   <parameters>
@@ -165,7 +165,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:vhetmTeIshQZhONHVwrJun8u4xIGPPsYdI7hZVLZ"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:x8/RX1atd03Sp8rK5LvGVamAPLpYdXYe1qiLV4q2"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -180,7 +180,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/admin/Desktop/PLOS/Job_backups/.metadata&quot;"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;D:/Stuffs/Talend-Studio-20200219_1130-V7.3.1/workspace/.metadata&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
@@ -200,7 +200,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:o4ZCkT+8ZL5rZqYdP+XapcR8uXPaxGnYS8C8SNbB"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:GigXGfEexmTtYHNHMK33UgtdIoi5JEjfTB2fMw4x"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -244,16 +244,16 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_nC59wIEvEeq7BM-nUVoFrQ"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
-    <elementParameter field="TEXT" name="HOST" value="context.PLOS_11000_Server"/>
+    <elementParameter field="TEXT" name="HOST" value="context.PLOS_EM_Server"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
-    <elementParameter field="TEXT" name="PORT" value="context.PLOS_11000_Port"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.PLOS_11000_Schema"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.PLOS_11000_Database"/>
-    <elementParameter field="TEXT" name="USER" value="context.PLOS_11000_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:hEzyPgQSsXFlLBS1QLv7p6BDPSapvE7iPPpWym7TYiiP8oCHQs9uRRbYMuKDHZVScAMPZzbxvA=="/>
+    <elementParameter field="TEXT" name="PORT" value="context.PLOS_EM_Port"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.PLOS_EM_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.PLOS_EM_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.PLOS_EM_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:w3OX+nhdLULChFy5LlPHcD3nqnZEfiavUIj5LEksF1XGoyPVHX6sQvDy/0fA8hKkfoKi/Q=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="context.PLOS_11000_AdditionalParams"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.PLOS_EM_AdditionalParams"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
@@ -270,7 +270,7 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:AuZDs8x4FUdcRtywlqQKjxs4lvF14C+CJEk5qWkr"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:jZzG5FjUaZ5b2GHergdTUxJduEAEDX26xcYVjHt+"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
@@ -342,7 +342,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:93LpCfD21CBkYRcdkcLFFLFvae01p+GgCproNkzQ"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:K/1ndA/8Y7rZl6NykCOAkWRSaqlmVsP8Wj1K5vWh"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -380,7 +380,7 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:wSyi0y2l2VASDGUpKCInRXMWRjgs3/YztS9STgq6"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:vGpSBHrah7j/50P52NV1ScQzQpg4m0NYBe87xL3Y"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
@@ -472,13 +472,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_46775ea5-b426-4f0b-8bff-7e526eb82c5e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3+z37D0LZ31ICCpfdrelzTMD2hG4DXJkhvElnJv7hxBzaHRkRlqv4YXh9Z24XTqXOTCefTxHMsLp&#13;
-336eEbGKiw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_cf7c7e24-e59d-4b60-bcd8-cd8b05962813"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>eaOoScq3HqhTB9CG+yquAe0CI1792LGNli9yBgUSTo2OOl9/CBYOYyrjLPtqxzBDMcpL4bXf6zSh&#13;
-2Z07MnaAMQ==</DigestValue></Reference></SignedInfo><SignatureValue>jmPS4tCxwoWms7AVuWa9n7WxdadDlhwLZvliA1lkBgBStcD3e8z0TRSagnkU1uHgMbKL+yzRP3SO&#13;
-I1NJpIWsPg+PpFV5OAsTJP3Q+LNu8Le9J78ECxbuti091GH+NGQUP9RuEQwkbFNI2bbaoh/Qmy3I&#13;
-a6FgpdSM5WR5kZBbbJX0T48gqyanEiyQ8trHAssIj4ucE4mzIhTznxy7o3lcrpchVeet5YQtUK2S&#13;
-YvNaZA9ey+o4uc+QfAuoFm2gUJm7ZI5MIh6PR0N9buWXiEjs/kEqyl1tZwSJKxkI8gokLS9GJY/e&#13;
-MyF6BbvCyno1BbNRVzCTp2afHmzG+3BoGNxoBA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ed9e1a2f-d06b-48bb-a3ce-bc2e51fe4bb7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>u1ALDzpSmy6kNMldfwVUHfZzzWCjhJEcpGVAFHUyogz/FyvQFjOJE/pbLDDENJF5A42smO7Ou8YW&#13;
+ZdnVJrWPwg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_408b184e-1679-4f23-843c-77917f56c249"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>m973j3PJ5uW1gOhODuczKoHGVhkMWzb/0+ttOLslb7h5Ir+LaSHrx6tnipVNk6vjbk1YF4fsh5Vv&#13;
+d2y+GUKEvA==</DigestValue></Reference></SignedInfo><SignatureValue>io0MYAIetnz7sJ15ybfotU5n9n4cp7dmszAWN969xuvO3gnx++SW960La3s+Fs/rVqm3OTKiVP4J&#13;
+zEu77uu7FaWFxbUuA7ZgK5loY4mTjOrT5l0s8SfBfVzLrEclFOzELXksvdt+gfztqWqv+p6wO03g&#13;
+1U/7yu7mvM4Ee96iqzNmDrGCbaG3Wjpj17ufrwaA9guB0qY+6qHhBB75TJUKuD7ZBCGf5sEJvFNu&#13;
+shV/79pkxsJLwCmOE+j5CGtZoUQTTMhBeDY7jTqDB0RWUuYVweCh+v4Xx02PZHtiRld1F/vb+Y0K&#13;
+akjV+OPvwwnaOw/Qj1DgjtX6YbHWylGynurxYw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -500,4 +500,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_cf7c7e24-e59d-4b60-bcd8-cd8b05962813" Target="#_46775ea5-b426-4f0b-8bff-7e526eb82c5e"><Timestamp>2020-06-17 07:43:49</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_408b184e-1679-4f23-843c-77917f56c249" Target="#_ed9e1a2f-d06b-48bb-a3ce-bc2e51fe4bb7"><Timestamp>2020-06-17 08:12:14</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
