@@ -31,6 +31,7 @@
     <contextParameter comment="" name="updated_id" prompt="updated_id?" promptNeeded="false" type="id_String" value="'-100',"/>
     <contextParameter comment="" name="FACT_TABLE" prompt="FACT_TABLE?" promptNeeded="false" type="id_String" value="AUTHORDOCUMENTAFFILIATION_F"/>
     <contextParameter comment="" name="Update_Count" prompt="Update_Count?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="Total_Count" prompt="Total_Count?" promptNeeded="false" type="id_Integer" value=""/>
   </context>
   <context confirmationNeeded="false" name="Test">
     <contextParameter comment="" name="table_Name" prompt="table_Name?" promptNeeded="false" type="id_String" value="AUTHORS"/>
@@ -64,6 +65,7 @@
     <contextParameter comment="" name="updated_id" prompt="updated_id?" promptNeeded="false" type="id_String" value="'-100',"/>
     <contextParameter comment="" name="FACT_TABLE" prompt="FACT_TABLE?" promptNeeded="false" type="id_String" value="AUTHORDOCUMENTAFFILIATION_F"/>
     <contextParameter comment="" name="Update_Count" prompt="Update_Count?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="Total_Count" prompt="Total_Count?" promptNeeded="false" type="id_Integer" value=""/>
   </context>
   <context confirmationNeeded="false" name="Prod">
     <contextParameter comment="" name="table_Name" prompt="table_Name?" promptNeeded="false" type="id_String" value="AUTHORS"/>
@@ -97,6 +99,7 @@
     <contextParameter comment="" name="updated_id" prompt="updated_id?" promptNeeded="false" type="id_String" value="'-100',"/>
     <contextParameter comment="" name="FACT_TABLE" prompt="FACT_TABLE?" promptNeeded="false" type="id_String" value="AUTHORDOCUMENTAFFILIATION_F"/>
     <contextParameter comment="" name="Update_Count" prompt="Update_Count?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="Total_Count" prompt="Total_Count?" promptNeeded="false" type="id_Integer" value=""/>
   </context>
   <context confirmationNeeded="false" name="local">
     <contextParameter comment="" name="table_Name" prompt="table_Name?" promptNeeded="false" type="id_String" value="AUTHORS"/>
@@ -130,6 +133,7 @@
     <contextParameter comment="" name="updated_id" prompt="updated_id?" promptNeeded="false" type="id_String" value="'-100',"/>
     <contextParameter comment="" name="FACT_TABLE" prompt="FACT_TABLE?" promptNeeded="false" type="id_String" value="AUTHORDOCUMENTAFFILIATION_F"/>
     <contextParameter comment="" name="Update_Count" prompt="Update_Count?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="Total_Count" prompt="Total_Count?" promptNeeded="false" type="id_Integer" value=""/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" show="false" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms1024M&quot;,&quot;-Xmx2048M&quot;,&quot;-XX:-UseGCOverheadLimit&quot;]}"/>
@@ -175,7 +179,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:YlsMjCsC5DJKoJYTfg3VdTMOgTx6gIJZkiIq59mq"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:WLIan30LIGDhA9dvxxK6HGc8DpIyDJAIde9SdYu/"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -210,7 +214,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:YXC8uRQGPdTZXAiTEydIEouEwQBk+2lkLnYQ5Zvj"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:i7he14pZlua8GSWoaonN/e0n7liWbS+arsTVf9U+"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -251,7 +255,7 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:6MKSDnn8TXRUqAlzcDV/Jnn7CSWXk0Oiq5Tj/RB0"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:BSlke6Rk0aC4eT5FoYGc1npVKKO0HTBCYT+nzqio"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
@@ -273,7 +277,7 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:qLE+n7+uzpa12MWwg3OOqhT9vjVttjVjdn6BlqCM"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:LGVKVRJ/SmFIWbcgd1AM58ad279s6FFxKW7aE6g+"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
@@ -448,7 +452,7 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:auwTE08UEyzJvN1MGiLWvKsScigmMdIndGgYZHgX"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:mayDf1T1k49JabfUbmatqTPmCorf7MOTeUlI2Q66"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
     <elementParameter field="TEXT" name="DATASET" value="context.DW_dataset"/>
@@ -457,7 +461,7 @@
     <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="APPEND"/>
     <elementParameter field="CHECK" name="BULK_FILE_ALREADY_EXIST" show="false" value="false"/>
     <elementParameter field="TEXT" name="GS_ACCESS_KEY" value="context.GCS_AccessKey"/>
-    <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="enc:system.encryption.key.v1:Cq9QXJsTkxjzVmD9n553gqvlZqa8OT7W4sMwxTPxaPgpWZI+4VNhmwjCsMWy/QvcTw=="/>
+    <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="enc:system.encryption.key.v1:xtYhsTBFtf71ytgoVV/1FJwGFdVJl5oKktzM4MIsc1Ywq0hT1nF1JUbFZo2nEQsJOQ=="/>
     <elementParameter field="TEXT" name="BUCKET_NAME" value="context.bucket_name"/>
     <elementParameter field="TEXT" name="GS_FILE" value="context.GCS_Filepath+&quot;&quot;+context.DW_Table+&quot;.csv&quot;"/>
     <elementParameter field="TEXT" name="GS_FILE_HEADER" value="0"/>
@@ -517,7 +521,7 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:pOFF75RPS3QxuGItFNSMUWIDf5Ph/4pmoSFQ/1MG"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:RCSxN4OQ6tH4ozipf3+XJeoBjrSUldWxQJsOEisM"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
@@ -545,7 +549,7 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:R9M4T2tF5kCahGGCVx3PRsSZvXpTxYJRWNZhI6Sy"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:ODU04uaxrDsuxx2LGJJsV6V7tb6PF1j2EaQ1sCTo"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
@@ -595,7 +599,7 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:5vBRCCNjLXoSd1qH8x6FgF8xU/y9ORkATRKzskCK"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:yrp4HnwMXDNORkzguUzaWQ40CekSifPerCb48LNi"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
@@ -623,12 +627,12 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_1"/>
   </node>
-  <node componentName="tBigQuerySQLRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="512">
+  <node componentName="tBigQuerySQLRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="608">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQuerySQLRow_3"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:Q9scYUuC0jysC6KWqM1asbQRvwfWn4A9iRR/6DH1"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:UnSR2KGRWewGuE7QUeZl8zND7o99rLD+iaaWdvNc"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
@@ -650,7 +654,7 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:7nf8RHLGHw8A53YRmjSdG6haOdTIlCOuPyHQOGdw"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:PsDpY9B7iCH1xoBO0LD+N9QRBRZISXajTDmqhuTC"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
@@ -666,12 +670,12 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQuerySQLRow_5"/>
   </node>
-  <node componentName="tBigQuerySQLRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="512">
+  <node componentName="tBigQuerySQLRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="608">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQuerySQLRow_1"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:fnB0qExSdJzixOFXG1DRC90VbI5yWMzAC7JFai/H"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:OehJyR+pTiySfwo35Bj815N7Hw2W5eFNp5lMyubO"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
@@ -687,13 +691,13 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQuerySQLRow_1"/>
   </node>
-  <node componentName="tBigQuerySQLRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="512">
+  <node componentName="tBigQuerySQLRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="608">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQuerySQLRow_4"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:0++nAin0i260vkyE38hgT1fQ+YjynzXjOeugZM3h"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:K87iWmXIq33FJqMt6Bs8K7ER2xwwLnp6E6WB05TV"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
@@ -709,13 +713,13 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQuerySQLRow_4"/>
   </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="320">
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_3"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="bigquery_id"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:eAurNF5Vfdn4hy9YGKTWOBUTlhzaxO+Qzo1l+AIr"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:Zc1jxDVpIZ82IDLoZYJCdsM+7nKTYMpJKqYchZ5I"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
@@ -729,18 +733,133 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_CUSTOM_TEMPORARY_DATASET" show="false" value="false"/>
     <elementParameter field="TEXT" name="TEMPORARY_DATASET_NAME" show="false" value="&quot;temp_dataset&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Get update count"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryInput_3">
       <column comment="" key="false" length="-1" name="COUNT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="320">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_2"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#13;&#10;//output_row.COUNT = input_row.COUNT;&#10;&#10;context.Update_Count = input_row.COUNT;&#13;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_2">
       <column comment="" key="false" length="-1" name="COUNT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tStatCatcher" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="832" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tStatCatcher_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tStatCatcher_1">
+      <column defaultValue="" key="false" length="0" name="moment" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="father_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="root_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="8" name="system_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="project" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job_repository_id" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job_version" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="context" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="origin" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message_type" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="8" name="duration" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="992" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_fyUc0KcSEeqcuotR5WZldg-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata name="out2">
+      <column key="false" length="0" name="moment" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="255" name="job" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="job_version" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="50" name="Environment" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="Source_Database" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="Target_Table" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Insert_Count" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Update_Count" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Total_Count" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="8" name="duration" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables activateExpressionFilter="true" columnNameFilter="" expressionFilter="row5.message_type.equals(&quot;end&quot;)&amp;&amp;row5.message.equals(&quot;success&quot;)" name="out2" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row5.moment " name="moment" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row5.job " name="job" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row5.job_version " name="job_version" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="&quot;DATAWAREHOUSE&quot;" name="Environment" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="" name="Source_Database" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="context.DW_Table" name="Target_Table" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="context.Total_Count - context.Update_Count" name="Insert_Count" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="context.Update_Count" name="Update_Count" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="context.Total_Count" name="Total_Count" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row5.duration " name="duration" nullable="true" type="id_Long"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row5" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="moment" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="pid" nullable="true" type="id_String"/>
+        <mapperTableEntries name="father_pid" nullable="true" type="id_String"/>
+        <mapperTableEntries name="root_pid" nullable="true" type="id_String"/>
+        <mapperTableEntries name="system_pid" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="project" nullable="true" type="id_String"/>
+        <mapperTableEntries name="job" nullable="true" type="id_String"/>
+        <mapperTableEntries name="job_repository_id" nullable="true" type="id_String"/>
+        <mapperTableEntries name="job_version" nullable="true" type="id_String"/>
+        <mapperTableEntries name="context" nullable="true" type="id_String"/>
+        <mapperTableEntries name="origin" nullable="true" type="id_String"/>
+        <mapperTableEntries name="message_type" nullable="true" type="id_String"/>
+        <mapperTableEntries name="message" nullable="true" type="id_String"/>
+        <mapperTableEntries name="duration" nullable="true" type="id_Long"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_6"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="bigquery_id"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
+    <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:xJe3yBTUxwCXg4M8uHqi6pHM5VZwU8NkfxNmYp28"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select ifnull(count(*),0) as TOTAL_COUNT from &quot;+context.DL_dataset+&quot;.&quot;+context.DL_Table+&quot;&#13;&#10;WHERE DELETED_FLAG = false and PROCESSED_FLAG = false&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="SMALL"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" show="false" value="&quot;D:/Stuffs/Talend-Studio-20200219_1130-V7.3.1/workspace/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CUSTOM_TEMPORARY_DATASET" show="false" value="false"/>
+    <elementParameter field="TEXT" name="TEMPORARY_DATASET_NAME" show="false" value="&quot;temp_dataset&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Get update count"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryInput_6">
+      <column comment="" key="false" length="-1" name="TOTAL_COUNT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_3"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#13;&#10;//output_row.TOTAL_COUNT = input_row.TOTAL_COUNT;&#13;&#10;&#10;context.Total_Count = input_row.TOTAL_COUNT;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_3">
+      <column comment="" key="false" length="-1" name="TOTAL_COUNT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQuerySQLRow_2" offsetLabelX="0" offsetLabelY="0" source="tBigQuerySQLRow_2" target="tBigQuerySQLRow_5">
@@ -903,7 +1022,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_2" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_2" target="tBigQuerySQLRow_3">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_2" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_2" target="tBigQueryInput_3">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
   </connection>
   <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tBigQueryOutput_1">
@@ -1107,6 +1226,20 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_3" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_3" target="tBigQuerySQLRow_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk6"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaRow_2" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_2" target="tBigQueryInput_6">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tStatCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tStatCatcher_1" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tBigQueryInput_6" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_6" target="tJavaRow_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row6"/>
+  </connection>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQuerySQLRow_2"/>
@@ -1158,13 +1291,23 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e2c3d245-2022-45dc-8a3c-88502b69ca3f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wUM4ol7CByQByebBsOVTl86BBXGa96RE4AXqYNsI7ce4xB/QajkowD2GDOq1L11u0pyzjNSSrLcH&#13;
-QzFxA+TGQw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_10da5a77-e503-4ac0-b504-ea320010e6e4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Aj5f8uRR+m2G6WFnSDVgbFhPK+GqysWqPRmrU3j0rfG0kg0IhzKeyDnNPH9QFBcWrBKvyrfovzwi&#13;
-ARSwBj5n4w==</DigestValue></Reference></SignedInfo><SignatureValue>nsddw/4Yv22Pyra5KZdWDmObggnLzhSJzOZx2eECTKPOtbVd3PypWKhxaHeEljuOJbCwu21wZdqe&#13;
-o+xLzKH6G47UPZN3Tvu+nNWxSlCuoxRU3GbEZuqWw8mzvgz0YXi3DFknphB/Saeqt4dbwsd5brd3&#13;
-8w9aGw5jOLVKTRHYGPJnnP26yNdKkdEnAx6JKAlaTMYw8JDEKIaFueUhFxjJn4gYFCyoefjLpZk+&#13;
-f8OtIRBdKGc2OaLDtOnDliUiHVReHFWsMD6sx5gZNFGOLNbkIry+pqRpRGPFJbSoVq/rJEZQvkT6&#13;
-E1TTc9Y9+wUN6zL7LTEYtDf8BASDyJnB4sknTQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tStatCatcher_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_6"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6c509350-736f-40ef-a714-0bc3831030f4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ybZTHSmjZygcRHJ1f5ZxpfJtZn6lRc92A1WjUqLUfyzFjdBqTEOAHWZ/z18A68XitHR1vK6AhKew&#13;
+HIFDm0AriQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b13ffe3c-0a20-43b6-ae00-037c69a448c9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qIynCNIwylwHUR+cgsB3UBm6gZCicYoX30euunnDzHKwo+FwnKaFqlQgcIH/54/ldeQnGx24jZju&#13;
+rYzs3rR/Hw==</DigestValue></Reference></SignedInfo><SignatureValue>ehu8I4enmUuJ3kwmNRpr9b6Bi8o+fJQPyR4uxAntmuLJ7MlpbbjT06qbmAK1EYbpDso/qPdmXLmi&#13;
+AnPSQPd0oXAxtt3WcziCnXC+9hZ1lPHtf4jQgb5vVc7h4hR0KlgIncO8QtiMzNc9YsGGVfW55JrY&#13;
+PkWDcQHwlVwP0loV2MSYx7CvgtfTT6Qc9ap9auQVLfGIJA+E/aebYHCeaQApvJzEwEnJ+w2RNNYU&#13;
+nKqIg8NbD/KGNvxMhNXbibFYSuHjm6drXfjfZurTEr/DTlbW/P3xcQMFnWO8QWbmoU3P44OLdEfT&#13;
+6O2tdYcF/nVrchwYuUq4G38LRGR0rQn8b50QmQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1186,4 +1329,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_10da5a77-e503-4ac0-b504-ea320010e6e4" Target="#_e2c3d245-2022-45dc-8a3c-88502b69ca3f"><Timestamp>2020-06-17 08:17:09</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b13ffe3c-0a20-43b6-ae00-037c69a448c9" Target="#_6c509350-736f-40ef-a714-0bc3831030f4"><Timestamp>2020-06-17 08:50:33</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
