@@ -297,6 +297,11 @@
       <artifactId>routines</artifactId>
       <version>7.3.1</version>
     </dependency>
+    <dependency>
+      <groupId>org.example.plos.job</groupId>
+      <artifactId>STATUS_EM_D_Delete_Job</artifactId>
+      <version>0.1.0</version>
+    </dependency>
   </dependencies>
   <build>
     <finalName>${talend.job.finalName}</finalName>
