@@ -179,7 +179,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:dwphtoOH6H5mTqugSknb57VVAnkJb8bJE/WR4bVl"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:cRUqQfx6xxwP+HkhO2kGbCOnpwcH8hyuq8JibEyk"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -214,7 +214,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:zwg/r+9JIbuq2krOT/njkVa/mD6rLHA6rKyh/twU"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:XSisa8KkZGQRTLZ3nQwkgLQV44D99DZJEiq7qT3u"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -255,7 +255,7 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:7M00IR/SOUaWSeqZ2W0NO2n+adZxnc6BpIdCgjKu"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:B8LSj6uwjrYHn1Vs8gaTbPqElVXldisxPBQrR7cd"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
@@ -277,7 +277,7 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:PdoZi8ZLKKrPTi+TVX0d6K+wxLX8/pPM2mTGMCA2"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:nuYOENg1XIP8QWOE+CSYH6fF+H+hOneFJTWz+/ad"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
@@ -452,7 +452,7 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:ZyBPzvcd2qMQlBFQeYtyDqB0K6F5LBaBkZ5M6z20"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:w7KjCQC1sYpWBxlWM7EGz6KDRFDvA+ogxMxtTH81"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
     <elementParameter field="TEXT" name="DATASET" value="context.DW_dataset"/>
@@ -461,7 +461,7 @@
     <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="APPEND"/>
     <elementParameter field="CHECK" name="BULK_FILE_ALREADY_EXIST" show="false" value="false"/>
     <elementParameter field="TEXT" name="GS_ACCESS_KEY" value="context.GCS_AccessKey"/>
-    <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="enc:system.encryption.key.v1:owfsg5Yhq3ark6/+hSTm/vsxtM2BgTRZzzgyejuihomDESxlZw5+PEDW2hpOZawRUA=="/>
+    <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="enc:system.encryption.key.v1:toaKpiisxJffE0zjGz53zKnmUXg44eUNS5JdibFrPqmgvL26jEAAPdJAHjyQr7oQJw=="/>
     <elementParameter field="TEXT" name="BUCKET_NAME" value="context.bucket_name"/>
     <elementParameter field="TEXT" name="GS_FILE" value="context.GCS_Filepath+&quot;&quot;+context.DW_Table+&quot;.csv&quot;"/>
     <elementParameter field="TEXT" name="GS_FILE_HEADER" value="0"/>
@@ -521,7 +521,7 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:EeOyI7KsuDOzgWCz8ntg9AaaBAiTxIfygMxIwuVL"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:Lh90Sn7mV/h1a9Axs2R1BusUVLlBZ+rWw/9mjKfe"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
@@ -549,7 +549,7 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:cisOa6TX54jPCaZsH9s4Wnq7P90kH/dI75Iimn//"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:e2KvtQ6JGyumTph/hqNF52RYTtdmggwZ/LNGbV9d"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
@@ -599,7 +599,7 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:PN7rAgVttEXMxL2vQY+e/09oWgk6NO5gsuehlDyc"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:AFSfubeayQ0hevc1eYd/bIahRUhhkx83NURiG8Dk"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
@@ -632,7 +632,7 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:LMETs6QNFeAsB0JJz5VxWr9SkWg3jIhgU4FUyClk"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:Nd2ItH/YZP+vKdZueDaFF5G3vSwb0km2sTw8mCLl"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
@@ -654,7 +654,7 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:J6ylqOH8kLhJq6VAvlkQ1A8kUDiRhxFGzxERskk3"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:Kphio2QjuqEjGgvfdooJCRwNwbUScF4v8EnZ+RnD"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
@@ -675,7 +675,7 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:Sz5WSQxOWLWB1WHva1ZMXgU39wBKARp8PSGluXJU"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:BA4U0fe4oFBpasVKqTS++M5XBz+OOSzjRIG9V6Lh"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
@@ -697,7 +697,7 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:XUn+3SRx6xq/EK9h9AcUHlRM7Aidk3UVUZbJjUGR"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:yt4vkHQACTRfV3VgpRJ+7B4eIQA7qKPRKXQuHywJ"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
@@ -719,11 +719,11 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:D8P8iGbtVLJtLvzAdAsUX2OQH0XF1Qhe8hiUH99Q"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:WyZiFlOw0Qaukl/sEGVEqKvnXNjwnGnKW9tVpvrj"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select ifnull(count(*),0) as COUNT from &quot;+context.DW_dataset+&quot;.&quot;+context.DW_TempTable+&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select ifnull(count(*),0) as COUNT&#13;&#10; from &quot;+context.DW_dataset+&quot;.&quot;+context.DW_TempTable+&quot;&quot;"/>
     <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="SMALL"/>
     <elementParameter field="FILE" name="TOKEN_NAME" show="false" value="&quot;D:/Stuffs/Talend-Studio-20200219_1130-V7.3.1/workspace/token.properties&quot;"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
@@ -836,7 +836,7 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:2YDpckA5H0OSR+8Rtyq15pqRc22fnVS6D6IyL5Yn"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:BPibSkGF98lBBKKcZkizP6lW8ZKEuamRl2sa1RKc"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
     <elementParameter field="TEXT" name="DATASET" value="context.Audit_Dataset"/>
@@ -845,7 +845,7 @@
     <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="APPEND"/>
     <elementParameter field="CHECK" name="BULK_FILE_ALREADY_EXIST" show="false" value="false"/>
     <elementParameter field="TEXT" name="GS_ACCESS_KEY" value="context.GCS_AccessKey"/>
-    <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="enc:system.encryption.key.v1:yJBHqNZrEH+psHjdCDcGf7mtjVFTVahN/1P7iRVKjhHq8d9e7Myk6mT/kWi/oiMC9Q=="/>
+    <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="enc:system.encryption.key.v1:LlJmJF8N6sbmhC1AyN55ZIWp4OyhUAokBEnXdmxo6ncpms5iSXL6M6HpEE9kPayoqw=="/>
     <elementParameter field="TEXT" name="BUCKET_NAME" value="context.bucket_name"/>
     <elementParameter field="TEXT" name="GS_FILE" value="context.GCS_Filepath+&quot;&quot;+context.AuditTable_name+&quot;.csv&quot;"/>
     <elementParameter field="TEXT" name="GS_FILE_HEADER" value="0"/>
@@ -886,11 +886,11 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:6lhZr1bj0NIpXjjvBW1jonvWvZ3yt1/vChmWvuFa"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:bAFqTUBwxnvhC9RUzTbxIqtCY9ERU9fbTN0S3nSx"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select ifnull(count(*),0) as TOTAL_COUNT from &quot;+context.DL_dataset+&quot;.&quot;+context.DL_Table+&quot;&#13;&#10;WHERE DELETED_FLAG = false and PROCESSED_FLAG = false&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select ifnull(count(*),0) as TOTAL_COUNT &#13;&#10;from &quot;+context.DL_dataset+&quot;.&quot;+context.DL_Table+&quot;&#13;&#10;WHERE DELETED_FLAG = false and PROCESSED_FLAG = false&quot;"/>
     <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="SMALL"/>
     <elementParameter field="FILE" name="TOKEN_NAME" show="false" value="&quot;D:/Stuffs/Talend-Studio-20200219_1130-V7.3.1/workspace/token.properties&quot;"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
@@ -1359,13 +1359,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_19303422-7de3-4cfc-b233-d3ed3324b6c8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>yb0+7Ngt1ip5paeW7SvVjA0vxuHA47d276rS6bXgG8qHlhfiwL2h5vZtSNC95VAFXmFCNv/7vBir&#13;
-wUxYz1IdKg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_aff56e20-bd3a-4bd7-8862-3fd56b6801a5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>L+syEwviyxiWCtnmHbQCU/ZrKSg2MBdQkwlF3fPhT2CVVKbDsZvRS0yDoYryZCaCGzpuywv8Qb0w&#13;
-Eeu1+E8VRg==</DigestValue></Reference></SignedInfo><SignatureValue>b5prXGcq+jDivqwnHAZpGvKva5URXhEcvpFKvvCtQLeLgoTgtiWSpejulOI+skJOtpVBjAinoKrj&#13;
-tj0dZsemnsVK/TEqCbPBsDRmOLKpVf7AfA0tz2ZBDmX8g0GjLbWhfJLdBSQdO9Z+yLvfL1thjtbV&#13;
-P/vRcG4YvXfRK8V/zRo388gPUOBIs7C2XQbeRURmtO5P/LU2xFR466/jTHCHpri5OE8CsItm5u+F&#13;
-61Or2BstAgF5VlYzOSilaeXdsqKqPS3jei3qE5b9CoVHZyfzUHk6+Z9hiD07Jv/cB1trt86E+MCn&#13;
-/b/ef8p1dEQtzUO3BhjsOhpvDVXv8yRJT2J0qA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6916b0f6-b219-48f4-989b-5b7cf8441aca"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>bIvEMA9b9KfkX2/PJznvOrIOZhWCpLRAiKr/3QbSkuRg7KGeETxHpeJ/PVjOLiIelp7wOe1Mpnaa&#13;
+kMe7HzWVWw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c1f9a261-c925-450a-b79b-4ee7f750112d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ABJaJ6FafBKFuiO6hXyDk6OCFApiR2xxvGsKf1Y1nET1PiIsqXRhdlr5tiMpI3/x1MTvWoKWTRb0&#13;
+c1Ij2XsBqw==</DigestValue></Reference></SignedInfo><SignatureValue>pyuBn3LI0EzL/EnfQS4h9WnXlMUZYVdEh4drebsAOpBWticgDtrrTQSTvNB4Na6in1YD4geP5ZJv&#13;
+0QzPRFMySTGVxSkd95nRh/m4D3woeJ+9uBJNXo0OEg0XiI6thvB7S/Fh44V9tWrG/wVCDjyAfEE4&#13;
+5usbLZp57DRW/SgdsQ68FznCbL/pYo7YxjJzyq88KoXNxsInrUPmJyP4AF6zWLsfnCIUlnIifeUy&#13;
+MTsQop6ttYJVmK4z+bSClYbao42prOKH2xCrd4OgXz7xET+r25GJOMGjmckU5vTefYGLgrw6cjvY&#13;
+GEZJreuVuTy6T+JWM8tvPYqZzKt+HMVdihPeTQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1387,4 +1387,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_aff56e20-bd3a-4bd7-8862-3fd56b6801a5" Target="#_19303422-7de3-4cfc-b233-d3ed3324b6c8"><Timestamp>2020-06-17 09:09:59</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c1f9a261-c925-450a-b79b-4ee7f750112d" Target="#_6916b0f6-b219-48f4-989b-5b7cf8441aca"><Timestamp>2020-06-17 11:57:42</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
