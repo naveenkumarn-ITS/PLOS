@@ -10,96 +10,96 @@
   <url>http://www.talend.org/</url>
   <modules>
     <module>code/routines</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/DCATEGOR/em_dcategor_delete_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/EDIT_SUBMISSION_STATUS/em_edit_submission_status_0.1</module>
     <module>jobs/process/PLOS/Dimension/LETTER/letter_em_d_delete_job_0.1</module>
     <module>jobs/process/PLOS/FACT/statushistory_f_0.1</module>
     <module>jobs/process/PLOS/Dimension/PEOPLE/people_em_d_0.1</module>
     <module>jobs/process/PLOS/MASTER_JOB/dimension_master_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/PUBLISHERROLE/em_publisherrole_main_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/DECISIONFAMILY/em_decisionfamily_main_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/PUBDATES/em_pubdates_delete_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/DECISIONFAMILY/em_decisionfamily_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/PERSONAL_IDENTIFIERS/em_personal_identifiers_delete_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/QUESTIONNAIRE_QUESTION_DEFINITION/em_questionnaire_question_definition_main_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/LETTER_FAMILY/em_letterfamily_delete_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/LETTER_FAMILY/em_letterfamily_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/QUESTIONNAIRE_QUESTION_DEFINITION/em_questionnaire_question_definition_0.1</module>
     <module>jobs/process/PLOS/Dimension/DCATEGOR/category_em_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/SECTION/em_section_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/DECISION/em_decision_delete_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/LETTER/em_letter_0.1</module>
     <module>jobs/process/PLOS/Dimension/LETTER/letter_em_d_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/DDISPOSI/em_ddisposi_0.1</module>
     <module>jobs/process/PLOS/MASTER_JOB/fact_master_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/EVENT/em_event_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/STATHIST/em_stathist_delete_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/DSTATUS/em_dstatus_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/QUESTIONNAIRE_QUESTION_DEFINITION/em_questionnaire_question_definition_delete_job_prod_0.1</module>
     <module>jobs/process/PLOS/Dimension/AUTHOR/author_em_d_0.1</module>
     <module>jobs/process/PLOS/Dimension/ROLE/role_em_d_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/DECISION/em_decision_main_job_prod_0.1</module>
     <module>jobs/process/PLOS/Dimension/PEOPLE/people_em_d_delete_job_0.1</module>
     <module>jobs/process/PLOS/Dimension/DOCUMENT/document_em_d_delete_job_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/STATHIST/em_stathist_0.1</module>
     <module>jobs/process/PLOS/MASTER_JOB/em_stagemasterone_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/EDITOR_ROLE/em_editorrole_main_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/ROLEEDIT/em_roleedit_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/PEOPLE/em_people_main_job__prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/DECISIONFAMILY/em_decisionfamily_delete_job_prod_0.1</module>
     <module>jobs/process/PLOS/FACT/editor_document_affiliation_f_0.1</module>
     <module>jobs/process/PLOS/Dimension/AUTHOR/author_em_d_delete_job_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/EDITOR_ROLE/em_editorrole_delete_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/EVENT/em_event_main_job_prod_0.1</module>
     <module>jobs/process/PLOS/Dimension/STATUS/status_em_d_delete_job_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/EVENT/em_event_delete_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/PEOPLE/em_people_delete_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/ROLEEDIT/em_roleedit_main_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/TRANSMITTAL_CUSTOM_IDENTIFIER/em_transmittal_custom_identifier_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/STATHIST/em_stathist_main_job_production_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/DSTATUS/em_dstatus_delete_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/EDITOR_ROLE/em_editorrole_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/EDIT_SUBMISSION_STATUS/em_edit_submission_status_delete_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/SECTION/em_section_delete_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/TRANSMITTAL_CUSTOM_IDENTIFIER/em_transmittal_custom_identifier_main_job_prod_0.1</module>
     <module>jobs/process/PLOS/Dimension/STATUS/status_em_d_0.1</module>
     <module>jobs/process/PLOS/MASTER_JOB/em_stagemaster_two_0.1</module>
     <module>jobs/process/PLOS/Dimension/DOCUMENT/document_em_d_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/AUTHORS/em_authors_main_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/PUBDATES/em_pubdates_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/EDIT_SUBMISSION_STATUS/em_edit_submission_status_main_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/PUBDATES/em_pubdates_main_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/AUTHORS/em_authors_delete_job_prod_0.1</module>
     <module>jobs/process/PLOS/Dimension/DECISION/decision_em_d_delete_job_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/EXTERNAL_REVIEWER_SYSTEM/em_external_reviewer_system_delete_job_prod_0.1</module>
     <module>jobs/process/PLOS/Dimension/DCATEGOR/category_em_d_delete_job_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/PEOPLE/em_people_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/DCATEGOR/em_dcategor_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/PERSONAL_IDENTIFIERS/em_personal_identifiers_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/LETTER_FAMILY/em_letterfamily_main_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/DOCUMENT/em_document_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/LETTER/em_letter_delete_job_prod_0.1</module>
     <module>jobs/process/PLOS/FACT/author_document_affiliation_f_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/DOCUMENT/em_document_main_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/DOCUMENT/em_document_delete_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/PERSONAL_IDENTIFIERS/em_personal_identifiers_main_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/DDISPOSI/em_ddisposi_main_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/AUTHORS/em_authors_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/ROLEEDIT/em_roleedit_delete_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/PUBLISHERROLE/em_publisherrole_0.1</module>
     <module>jobs/process/PLOS/Dimension/DECISION/decision_em_d_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/TRANSMITTAL_CUSTOM_IDENTIFIER/em_transmittal_custom_identifier_delete_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/DDISPOSI/em_ddisposi_delete_job_prod_0.1</module>
     <module>jobs/process/PLOS/MASTER_JOB/em_stagemaster_three_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/EXTERNAL_REVIEWER_SYSTEM/em_external_reviewer_system_main_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/DECISION/em_decision_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/LETTER/em_letter_main_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/DSTATUS/em_dstatus_main_job_prod_0.1</module>
     <module>jobs/process/PLOS/Dimension/ROLE/role_em_d_delete_job_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/PUBLISHERROLE/em_publisherrole_delete_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/EXTERNAL_REVIEWER_SYSTEM/em_external_reviewer_system_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/SECTION/em_section_main_job_prod_0.1</module>
-    <module>jobs/process/PLOS/Stage/Delete_insert_and_merge_update/DCATEGOR/em_dcategor_main_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/AUTHORS/em_authors_0.1</module>
+    <module>jobs/process/PLOS/Stage/AUTHORS/em_authors_delete_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/AUTHORS/em_authors_main_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/DCATEGOR/em_dcategor_0.1</module>
+    <module>jobs/process/PLOS/Stage/DCATEGOR/em_dcategor_delete_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/DCATEGOR/em_dcategor_main_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/DDISPOSI/em_ddisposi_0.1</module>
+    <module>jobs/process/PLOS/Stage/DDISPOSI/em_ddisposi_delete_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/DDISPOSI/em_ddisposi_main_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/DECISION/em_decision_0.1</module>
+    <module>jobs/process/PLOS/Stage/DECISION/em_decision_delete_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/DECISION/em_decision_main_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/DECISIONFAMILY/em_decisionfamily_0.1</module>
+    <module>jobs/process/PLOS/Stage/DECISIONFAMILY/em_decisionfamily_delete_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/DECISIONFAMILY/em_decisionfamily_main_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/DOCUMENT/em_document_0.1</module>
+    <module>jobs/process/PLOS/Stage/DOCUMENT/em_document_delete_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/DOCUMENT/em_document_main_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/DSTATUS/em_dstatus_0.1</module>
+    <module>jobs/process/PLOS/Stage/DSTATUS/em_dstatus_delete_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/DSTATUS/em_dstatus_main_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/EDIT_SUBMISSION_STATUS/em_edit_submission_status_0.1</module>
+    <module>jobs/process/PLOS/Stage/EDIT_SUBMISSION_STATUS/em_edit_submission_status_delete_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/EDIT_SUBMISSION_STATUS/em_edit_submission_status_main_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/EDITOR_ROLE/em_editorrole_0.1</module>
+    <module>jobs/process/PLOS/Stage/EDITOR_ROLE/em_editorrole_delete_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/EDITOR_ROLE/em_editorrole_main_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/EVENT/em_event_0.1</module>
+    <module>jobs/process/PLOS/Stage/EVENT/em_event_delete_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/EVENT/em_event_main_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/EXTERNAL_REVIEWER_SYSTEM/em_external_reviewer_system_0.1</module>
+    <module>jobs/process/PLOS/Stage/EXTERNAL_REVIEWER_SYSTEM/em_external_reviewer_system_delete_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/EXTERNAL_REVIEWER_SYSTEM/em_external_reviewer_system_main_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/LETTER/em_letter_0.1</module>
+    <module>jobs/process/PLOS/Stage/LETTER/em_letter_delete_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/LETTER/em_letter_main_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/LETTER_FAMILY/em_letterfamily_0.1</module>
+    <module>jobs/process/PLOS/Stage/LETTER_FAMILY/em_letterfamily_delete_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/LETTER_FAMILY/em_letterfamily_main_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/PEOPLE/em_people_0.1</module>
+    <module>jobs/process/PLOS/Stage/PEOPLE/em_people_delete_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/PEOPLE/em_people_main_job__prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/PERSONAL_IDENTIFIERS/em_personal_identifiers_0.1</module>
+    <module>jobs/process/PLOS/Stage/PERSONAL_IDENTIFIERS/em_personal_identifiers_delete_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/PERSONAL_IDENTIFIERS/em_personal_identifiers_main_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/PUBDATES/em_pubdates_0.1</module>
+    <module>jobs/process/PLOS/Stage/PUBDATES/em_pubdates_delete_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/PUBDATES/em_pubdates_main_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/PUBLISHERROLE/em_publisherrole_0.1</module>
+    <module>jobs/process/PLOS/Stage/PUBLISHERROLE/em_publisherrole_delete_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/PUBLISHERROLE/em_publisherrole_main_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/QUESTIONNAIRE_QUESTION_DEFINITION/em_questionnaire_question_definition_0.1</module>
+    <module>jobs/process/PLOS/Stage/QUESTIONNAIRE_QUESTION_DEFINITION/em_questionnaire_question_definition_delete_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/QUESTIONNAIRE_QUESTION_DEFINITION/em_questionnaire_question_definition_main_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/ROLEEDIT/em_roleedit_0.1</module>
+    <module>jobs/process/PLOS/Stage/ROLEEDIT/em_roleedit_delete_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/ROLEEDIT/em_roleedit_main_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/SECTION/em_section_0.1</module>
+    <module>jobs/process/PLOS/Stage/SECTION/em_section_delete_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/SECTION/em_section_main_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/STATHIST/em_stathist_0.1</module>
+    <module>jobs/process/PLOS/Stage/STATHIST/em_stathist_delete_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/STATHIST/em_stathist_main_job_production_0.1</module>
+    <module>jobs/process/PLOS/Stage/TRANSMITTAL_CUSTOM_IDENTIFIER/em_transmittal_custom_identifier_0.1</module>
+    <module>jobs/process/PLOS/Stage/TRANSMITTAL_CUSTOM_IDENTIFIER/em_transmittal_custom_identifier_delete_job_prod_0.1</module>
+    <module>jobs/process/PLOS/Stage/TRANSMITTAL_CUSTOM_IDENTIFIER/em_transmittal_custom_identifier_main_job_prod_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>

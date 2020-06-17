@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Prod" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="database_Name" prompt="database_Name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Target_Table" prompt="Target_Table?" promptNeeded="false" type="id_String" value="EM_DOCUMENT"/>
+    <contextParameter comment="" name="Temp_Table" prompt="Temp_Table?" promptNeeded="false" type="id_String" value="EM_DOCUMENT_temp"/>
+    <contextParameter comment="" name="Archive_Table" prompt="Archive_Table?" promptNeeded="false" type="id_String" value="EM_DOCUMENT_ARCHIVE"/>
+    <contextParameter comment="" name="Count" prompt="Count?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="table_Name" prompt="table_Name?" promptNeeded="false" type="id_String" value="DOCUMENT"/>
+    <contextParameter comment="" name="Total_Count" prompt="Total_Count?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="pk_identifier" prompt="pk_identifier?" promptNeeded="false" type="id_String" value="T.DOCUMENTID = S.DOCUMENTID"/>
+    <contextParameter comment="" name="dataset" prompt="dataset?" promptNeeded="false" type="id_String" value="PLOSDL_DEV"/>
+    <contextParameter comment="" name="Load_Count" prompt="Load_Count?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="moment" prompt="moment?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Audit_Dataset" prompt="Audit_Dataset?" promptNeeded="false" type="id_String" value="RUNBOOK_DEV"/>
+    <contextParameter comment="" name="AuditTable_name" prompt="AuditTable_name?" promptNeeded="false" type="id_String" value="AUDIT_LOG"/>
+    <contextParameter comment="" name="bucket_name" prompt="bucket_name?" promptNeeded="false" type="id_String" value="plos-data-talend-em"/>
+    <contextParameter comment="" name="ControlTable_name" prompt="ControlTable_name?" promptNeeded="false" type="id_String" value="CONTROL_TABLE"/>
+    <contextParameter comment="" name="deleted_id" prompt="deleted_id?" promptNeeded="false" type="id_String" value="-100,"/>
+    <contextParameter comment="" name="DL_dataset" prompt="DL_dataset?" promptNeeded="false" type="id_String" value="PLOSDL_DEV"/>
+    <contextParameter comment="" name="DW_dataset" prompt="DW_dataset?" promptNeeded="false" type="id_String" value="PLOSDW_DEV"/>
+    <contextParameter comment="" name="Enddate" prompt="Enddate?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ErrorLogTable_name" prompt="ErrorLogTable_name?" promptNeeded="false" type="id_String" value="ERROR_LOG"/>
+    <contextParameter comment="" name="GCS_AccessKey" prompt="GCS_AccessKey?" promptNeeded="false" type="id_String" value="GOOG3ER2KFMJUKRJBTDXTHWR"/>
+    <contextParameter comment="" name="GCS_Filepath" prompt="GCS_Filepath?" promptNeeded="false" type="id_String" value="gs://plos-data-talend-em/"/>
+    <contextParameter comment="" name="GCS_SecretKey" prompt="GCS_SecretKey?" promptNeeded="false" type="id_String" value="DTorJfwAOHaO4QScGYTnesCUALodPrhYpuk4Cejj"/>
+    <contextParameter comment="" name="Local_filename" prompt="Local_filename?" promptNeeded="false" type="id_String" value="/opt/talend/ipaas/rt-flow/TalendJobServersFile/repository/"/>
+    <contextParameter comment="" name="project_id" prompt="project_id?" promptNeeded="false" type="id_String" value="plos-data"/>
+    <contextParameter comment="" name="resource_file_ServiceAccountKey" prompt="resource_file_ServiceAccountKey?" promptNeeded="false" type="id_String" value="C:/Users/admin/Desktop/PLOS/Source_file/plos-data-2357502552d3.json"/>
+    <contextParameter comment="" name="Source" prompt="Source?" promptNeeded="false" type="id_String" value="EM"/>
+    <contextParameter comment="" name="startdate" prompt="startdate?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Update_deleted_id" prompt="Update_deleted_id?" promptNeeded="false" type="id_String" value="-100,"/>
+    <contextParameter comment="" name="Mail_from" prompt="Mail_from?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="achitambaram@plos.org"/>
+    <contextParameter comment="" name="Mail_Password" prompt="Mail_Password?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_Password" value="enc:system.encryption.key.v1:0xVaV4uJKUrM1cbBMRYLwT5o0R96ROoDQDmpg7bjJzVQqRn+KQ=="/>
+    <contextParameter comment="" name="Mail_Subject" prompt="Mail_Subject?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="Job_Status"/>
+    <contextParameter comment="" name="Mail_To" prompt="Mail_To?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="alagu@itshoulders.com,jeyaram@itshoulders.com"/>
+    <contextParameter comment="" name="Mail_To1" prompt="Mail_To1?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value=""/>
+    <contextParameter comment="" name="Mail_Username" prompt="Mail_Username?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="alagu@itshoulders.com"/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="smtp.1and1.com"/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="587"/>
+    <contextParameter comment="" name="PLOS_11000_AdditionalParams" prompt="PLOS_11000_AdditionalParams?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_11000_Database" prompt="PLOS_11000_Database?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_11000_Login" prompt="PLOS_11000_Login?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="mother"/>
+    <contextParameter comment="" name="PLOS_11000_Password" prompt="PLOS_11000_Password?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_Password" value="enc:system.encryption.key.v1:0FAY2GDvgRQ9gi8bV3p8NoQ3iLWa46T7eQ0+O1s7mWUacw=="/>
+    <contextParameter comment="" name="PLOS_11000_Port" prompt="PLOS_11000_Port?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_11000_Schema" prompt="PLOS_11000_Schema?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_11000_Server" prompt="PLOS_11000_Server?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="customerreporting.editorialmanager.com:11000"/>
+  </context>
+  <context confirmationNeeded="false" name="Prod">
+    <contextParameter comment="" name="database_Name" prompt="database_Name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Target_Table" prompt="Target_Table?" promptNeeded="false" type="id_String" value="EM_DOCUMENT"/>
+    <contextParameter comment="" name="Temp_Table" prompt="Temp_Table?" promptNeeded="false" type="id_String" value="EM_DOCUMENT_temp"/>
+    <contextParameter comment="" name="Archive_Table" prompt="Archive_Table?" promptNeeded="false" type="id_String" value="EM_DOCUMENT_ARCHIVE"/>
+    <contextParameter comment="" name="Count" prompt="Count?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="table_Name" prompt="table_Name?" promptNeeded="false" type="id_String" value="DOCUMENT"/>
+    <contextParameter comment="" name="Total_Count" prompt="Total_Count?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="pk_identifier" prompt="pk_identifier?" promptNeeded="false" type="id_String" value="T.DOCUMENTID = S.DOCUMENTID"/>
+    <contextParameter comment="" name="dataset" prompt="dataset?" promptNeeded="false" type="id_String" value="PLOSDL"/>
+    <contextParameter comment="" name="Load_Count" prompt="Load_Count?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="moment" prompt="moment?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Audit_Dataset" prompt="Audit_Dataset?" promptNeeded="false" type="id_String" value="RUNBOOK"/>
+    <contextParameter comment="" name="AuditTable_name" prompt="AuditTable_name?" promptNeeded="false" type="id_String" value="AUDIT_LOG"/>
+    <contextParameter comment="" name="bucket_name" prompt="bucket_name?" promptNeeded="false" type="id_String" value="plos-data-talend-em/prod"/>
+    <contextParameter comment="" name="ControlTable_name" prompt="ControlTable_name?" promptNeeded="false" type="id_String" value="CONTROL_TABLE"/>
+    <contextParameter comment="" name="deleted_id" prompt="deleted_id?" promptNeeded="false" type="id_String" value="-100,"/>
+    <contextParameter comment="" name="DL_dataset" prompt="DL_dataset?" promptNeeded="false" type="id_String" value="PLOSDL"/>
+    <contextParameter comment="" name="DW_dataset" prompt="DW_dataset?" promptNeeded="false" type="id_String" value="PLOSDW"/>
+    <contextParameter comment="" name="Enddate" prompt="Enddate?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ErrorLogTable_name" prompt="ErrorLogTable_name?" promptNeeded="false" type="id_String" value="ERROR_LOG"/>
+    <contextParameter comment="" name="GCS_AccessKey" prompt="GCS_AccessKey?" promptNeeded="false" type="id_String" value="GOOG3ER2KFMJUKRJBTDXTHWR"/>
+    <contextParameter comment="" name="GCS_Filepath" prompt="GCS_Filepath?" promptNeeded="false" type="id_String" value="gs://plos-data-talend-em/prod/"/>
+    <contextParameter comment="" name="GCS_SecretKey" prompt="GCS_SecretKey?" promptNeeded="false" type="id_String" value="DTorJfwAOHaO4QScGYTnesCUALodPrhYpuk4Cejj"/>
+    <contextParameter comment="" name="Local_filename" prompt="Local_filename?" promptNeeded="false" type="id_String" value="/opt/talend/ipaas/rt-flow/TalendJobServersFile/repository/prod/"/>
+    <contextParameter comment="" name="project_id" prompt="project_id?" promptNeeded="false" type="id_String" value="plos-data"/>
+    <contextParameter comment="" name="resource_file_ServiceAccountKey" prompt="resource_file_ServiceAccountKey?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Source" prompt="Source?" promptNeeded="false" type="id_String" value="EM"/>
+    <contextParameter comment="" name="startdate" prompt="startdate?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Update_deleted_id" prompt="Update_deleted_id?" promptNeeded="false" type="id_String" value="-100,"/>
+    <contextParameter comment="" name="Mail_from" prompt="Mail_from?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="achitambaram@plos.org"/>
+    <contextParameter comment="" name="Mail_Password" prompt="Mail_Password?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_Password" value="enc:system.encryption.key.v1:la7TbEWfC73CiVCwR7kNczHjkoO19wXSKtQoqiRaV2k+VwdTiQ=="/>
+    <contextParameter comment="" name="Mail_Subject" prompt="Mail_Subject?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="Job_Status"/>
+    <contextParameter comment="" name="Mail_To" prompt="Mail_To?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="alagu@itshoulders.com,jeyaram@itshoulders.com"/>
+    <contextParameter comment="" name="Mail_To1" prompt="Mail_To1?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="alagu@itshoulders.com,jeyaram@itshoulders.com,naveenkumarn@itshoulders.com"/>
+    <contextParameter comment="" name="Mail_Username" prompt="Mail_Username?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="alagu@itshoulders.com"/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="smtp.1and1.com"/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="587"/>
+    <contextParameter comment="" name="PLOS_11000_AdditionalParams" prompt="PLOS_11000_AdditionalParams?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_11000_Database" prompt="PLOS_11000_Database?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_11000_Login" prompt="PLOS_11000_Login?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="speedy"/>
+    <contextParameter comment="" name="PLOS_11000_Password" prompt="PLOS_11000_Password?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_Password" value="enc:system.encryption.key.v1:vHrYT/pxpVZqhZtdPlZV135I+A5v1DP5eLYNcwm0Zn259/kx"/>
+    <contextParameter comment="" name="PLOS_11000_Port" prompt="PLOS_11000_Port?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_11000_Schema" prompt="PLOS_11000_Schema?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_11000_Server" prompt="PLOS_11000_Server?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="customerreporting.editorialmanager.com:12000"/>
+  </context>
+  <context confirmationNeeded="false" name="local">
+    <contextParameter comment="" name="database_Name" prompt="database_Name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Target_Table" prompt="Target_Table?" promptNeeded="false" type="id_String" value="EM_DOCUMENT"/>
+    <contextParameter comment="" name="Temp_Table" prompt="Temp_Table?" promptNeeded="false" type="id_String" value="EM_DOCUMENT_temp"/>
+    <contextParameter comment="" name="Archive_Table" prompt="Archive_Table?" promptNeeded="false" type="id_String" value="EM_DOCUMENT_ARCHIVE"/>
+    <contextParameter comment="" name="Count" prompt="Count?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="table_Name" prompt="table_Name?" promptNeeded="false" type="id_String" value="DOCUMENT"/>
+    <contextParameter comment="" name="Total_Count" prompt="Total_Count?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="pk_identifier" prompt="pk_identifier?" promptNeeded="false" type="id_String" value="T.DOCUMENTID = S.DOCUMENTID"/>
+    <contextParameter comment="" name="dataset" prompt="dataset?" promptNeeded="false" type="id_String" value="PLOSDL_DEV"/>
+    <contextParameter comment="" name="Load_Count" prompt="Load_Count?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="moment" prompt="moment?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Audit_Dataset" prompt="Audit_Dataset?" promptNeeded="false" type="id_String" value="RUNBOOK_DEV"/>
+    <contextParameter comment="" name="AuditTable_name" prompt="AuditTable_name?" promptNeeded="false" type="id_String" value="AUDIT_LOG"/>
+    <contextParameter comment="" name="bucket_name" prompt="bucket_name?" promptNeeded="false" type="id_String" value="plos-data-talend-em"/>
+    <contextParameter comment="" name="ControlTable_name" prompt="ControlTable_name?" promptNeeded="false" type="id_String" value="CONTROL_TABLE"/>
+    <contextParameter comment="" name="deleted_id" prompt="deleted_id?" promptNeeded="false" type="id_String" value="-100,"/>
+    <contextParameter comment="" name="DL_dataset" prompt="DL_dataset?" promptNeeded="false" type="id_String" value="PLOSDL_DEV"/>
+    <contextParameter comment="" name="DW_dataset" prompt="DW_dataset?" promptNeeded="false" type="id_String" value="PLOSDW_DEV"/>
+    <contextParameter comment="" name="Enddate" prompt="Enddate?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ErrorLogTable_name" prompt="ErrorLogTable_name?" promptNeeded="false" type="id_String" value="ERROR_LOG"/>
+    <contextParameter comment="" name="GCS_AccessKey" prompt="GCS_AccessKey?" promptNeeded="false" type="id_String" value="GOOG3ER2KFMJUKRJBTDXTHWR"/>
+    <contextParameter comment="" name="GCS_Filepath" prompt="GCS_Filepath?" promptNeeded="false" type="id_String" value="gs://plos-data-talend-em/"/>
+    <contextParameter comment="" name="GCS_SecretKey" prompt="GCS_SecretKey?" promptNeeded="false" type="id_String" value="DTorJfwAOHaO4QScGYTnesCUALodPrhYpuk4Cejj"/>
+    <contextParameter comment="" name="Local_filename" prompt="Local_filename?" promptNeeded="false" type="id_String" value="/opt/talend/ipaas/rt-flow/TalendJobServersFile/repository/"/>
+    <contextParameter comment="" name="project_id" prompt="project_id?" promptNeeded="false" type="id_String" value="plos-data"/>
+    <contextParameter comment="" name="resource_file_ServiceAccountKey" prompt="resource_file_ServiceAccountKey?" promptNeeded="false" type="id_String" value="C:/Users/admin/Desktop/PLOS/Source_file/plos-data-2357502552d3.json"/>
+    <contextParameter comment="" name="Source" prompt="Source?" promptNeeded="false" type="id_String" value="EM"/>
+    <contextParameter comment="" name="startdate" prompt="startdate?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Update_deleted_id" prompt="Update_deleted_id?" promptNeeded="false" type="id_String" value="-100,"/>
+    <contextParameter comment="" name="Mail_from" prompt="Mail_from?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="achitambaram@plos.org"/>
+    <contextParameter comment="" name="Mail_Password" prompt="Mail_Password?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_Password" value="enc:system.encryption.key.v1:9Gos+7iqpmufYETWFJSxwPtjdZSQO4m2dY0V1Dji62a+N3KAfg=="/>
+    <contextParameter comment="" name="Mail_Subject" prompt="Mail_Subject?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="Job_Status"/>
+    <contextParameter comment="" name="Mail_To" prompt="Mail_To?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="alagu@itshoulders.com,jeyaram@itshoulders.com"/>
+    <contextParameter comment="" name="Mail_To1" prompt="Mail_To1?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value=""/>
+    <contextParameter comment="" name="Mail_Username" prompt="Mail_Username?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="alagu@itshoulders.com"/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="smtp.1and1.com"/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="587"/>
+    <contextParameter comment="" name="PLOS_11000_AdditionalParams" prompt="PLOS_11000_AdditionalParams?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_11000_Database" prompt="PLOS_11000_Database?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_11000_Login" prompt="PLOS_11000_Login?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="mother"/>
+    <contextParameter comment="" name="PLOS_11000_Password" prompt="PLOS_11000_Password?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_Password" value="enc:system.encryption.key.v1:H8tbLWB8hp6tMxJW/xatOXZydxw8ph+U2RM3xHYXoJectA=="/>
+    <contextParameter comment="" name="PLOS_11000_Port" prompt="PLOS_11000_Port?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_11000_Schema" prompt="PLOS_11000_Schema?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_11000_Server" prompt="PLOS_11000_Server?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="customerreporting.editorialmanager.com:11000"/>
+  </context>
+  <context confirmationNeeded="false" name="Test">
+    <contextParameter comment="" name="database_Name" prompt="database_Name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Target_Table" prompt="Target_Table?" promptNeeded="false" type="id_String" value="EM_DOCUMENT"/>
+    <contextParameter comment="" name="Temp_Table" prompt="Temp_Table?" promptNeeded="false" type="id_String" value="EM_DOCUMENT_temp"/>
+    <contextParameter comment="" name="Archive_Table" prompt="Archive_Table?" promptNeeded="false" type="id_String" value="EM_DOCUMENT_ARCHIVE"/>
+    <contextParameter comment="" name="Count" prompt="Count?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="table_Name" prompt="table_Name?" promptNeeded="false" type="id_String" value="DOCUMENT"/>
+    <contextParameter comment="" name="Total_Count" prompt="Total_Count?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="pk_identifier" prompt="pk_identifier?" promptNeeded="false" type="id_String" value="T.DOCUMENTID = S.DOCUMENTID"/>
+    <contextParameter comment="" name="dataset" prompt="dataset?" promptNeeded="false" type="id_String" value="PLOSDL_TEST"/>
+    <contextParameter comment="" name="Load_Count" prompt="Load_Count?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="moment" prompt="moment?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Audit_Dataset" prompt="Audit_Dataset?" promptNeeded="false" type="id_String" value="RUNBOOK_TEST"/>
+    <contextParameter comment="" name="AuditTable_name" prompt="AuditTable_name?" promptNeeded="false" type="id_String" value="AUDIT_LOG"/>
+    <contextParameter comment="" name="bucket_name" prompt="bucket_name?" promptNeeded="false" type="id_String" value="plos-data-talend-em/test"/>
+    <contextParameter comment="" name="ControlTable_name" prompt="ControlTable_name?" promptNeeded="false" type="id_String" value="CONTROL_TABLE"/>
+    <contextParameter comment="" name="deleted_id" prompt="deleted_id?" promptNeeded="false" type="id_String" value="-100,"/>
+    <contextParameter comment="" name="DL_dataset" prompt="DL_dataset?" promptNeeded="false" type="id_String" value="PLOSDL_TEST"/>
+    <contextParameter comment="" name="DW_dataset" prompt="DW_dataset?" promptNeeded="false" type="id_String" value="PLOSDW_TEST"/>
+    <contextParameter comment="" name="Enddate" prompt="Enddate?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ErrorLogTable_name" prompt="ErrorLogTable_name?" promptNeeded="false" type="id_String" value="ERROR_LOG"/>
+    <contextParameter comment="" name="GCS_AccessKey" prompt="GCS_AccessKey?" promptNeeded="false" type="id_String" value="GOOG3ER2KFMJUKRJBTDXTHWR"/>
+    <contextParameter comment="" name="GCS_Filepath" prompt="GCS_Filepath?" promptNeeded="false" type="id_String" value="gs://plos-data-talend-em/test/"/>
+    <contextParameter comment="" name="GCS_SecretKey" prompt="GCS_SecretKey?" promptNeeded="false" type="id_String" value="DTorJfwAOHaO4QScGYTnesCUALodPrhYpuk4Cejj"/>
+    <contextParameter comment="" name="Local_filename" prompt="Local_filename?" promptNeeded="false" type="id_String" value="/opt/talend/ipaas/rt-flow/TalendJobServersFile/repository/test/"/>
+    <contextParameter comment="" name="project_id" prompt="project_id?" promptNeeded="false" type="id_String" value="plos-data"/>
+    <contextParameter comment="" name="resource_file_ServiceAccountKey" prompt="resource_file_ServiceAccountKey?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Source" prompt="Source?" promptNeeded="false" type="id_String" value="EM"/>
+    <contextParameter comment="" name="startdate" prompt="startdate?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Update_deleted_id" prompt="Update_deleted_id?" promptNeeded="false" type="id_String" value="-100,"/>
+    <contextParameter comment="" name="Mail_from" prompt="Mail_from?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="achitambaram@plos.org"/>
+    <contextParameter comment="" name="Mail_Password" prompt="Mail_Password?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_Password" value="enc:system.encryption.key.v1:tDAfH3u0Q29U3j+ZDNX6GOfBfscBbXelIODz+IjYcK0YEi6Ppw=="/>
+    <contextParameter comment="" name="Mail_Subject" prompt="Mail_Subject?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="Job_Status"/>
+    <contextParameter comment="" name="Mail_To" prompt="Mail_To?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="alagu@itshoulders.com,jeyaram@itshoulders.com"/>
+    <contextParameter comment="" name="Mail_To1" prompt="Mail_To1?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value=""/>
+    <contextParameter comment="" name="Mail_Username" prompt="Mail_Username?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="alagu@itshoulders.com"/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="smtp.1and1.com"/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" repositoryContextId="_2JjFUJ9CEeqY57bhQI3org" type="id_String" value="587"/>
+    <contextParameter comment="" name="PLOS_11000_AdditionalParams" prompt="PLOS_11000_AdditionalParams?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_11000_Database" prompt="PLOS_11000_Database?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_11000_Login" prompt="PLOS_11000_Login?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="mother"/>
+    <contextParameter comment="" name="PLOS_11000_Password" prompt="PLOS_11000_Password?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_Password" value="enc:system.encryption.key.v1:xu/qU1IGsgBX6JR2TdXNA8m1kY2PeG2i1SdrJ9IgmxV4Kg=="/>
+    <contextParameter comment="" name="PLOS_11000_Port" prompt="PLOS_11000_Port?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_11000_Schema" prompt="PLOS_11000_Schema?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value=""/>
+    <contextParameter comment="" name="PLOS_11000_Server" prompt="PLOS_11000_Server?" promptNeeded="false" repositoryContextId="_9KdDsIEvEeq7BM-nUVoFrQ" type="id_String" value="customerreporting.editorialmanager.com:11000"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:54sZD6VYZvkeO9CeAfVhkbY4MyrpkWPHjCRSArkP"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/admin/Desktop/PLOS/Job_backups/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:tvgjQB+QWjQaMnDbawqT+j9TSq8ppRTnkGih9R/P"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_SjQdILBrEeq4lYpCgDzgBw" name="DQTechnical"/>
+    <routinesParameter id="_SiyjELBrEeq4lYpCgDzgBw" name="DataMasking"/>
+    <routinesParameter id="_SgWTELBrEeq4lYpCgDzgBw" name="DataOperation"/>
+    <routinesParameter id="_SjBMkLBrEeq4lYpCgDzgBw" name="DataQualityDependencies"/>
+    <routinesParameter id="_Si6e4LBrEeq4lYpCgDzgBw" name="DataQuality"/>
+    <routinesParameter id="_SjLkoLBrEeq4lYpCgDzgBw" name="DqStringHandling"/>
+    <routinesParameter id="_Sh9coLBrEeq4lYpCgDzgBw" name="Mathematical"/>
+    <routinesParameter id="_SiDjQLBrEeq4lYpCgDzgBw" name="Numeric"/>
+    <routinesParameter id="_SiKQ8LBrEeq4lYpCgDzgBw" name="Relational"/>
+    <routinesParameter id="_SitDgLBrEeq4lYpCgDzgBw" name="SQLike"/>
+    <routinesParameter id="_SiPwgLBrEeq4lYpCgDzgBw" name="StringHandling"/>
+    <routinesParameter id="_SiV3ILBrEeq4lYpCgDzgBw" name="TalendDataGenerator"/>
+    <routinesParameter id="_SibWsLBrEeq4lYpCgDzgBw" name="TalendDate"/>
+    <routinesParameter id="_Sim84LBrEeq4lYpCgDzgBw" name="TalendStringUtil"/>
+    <routinesParameter id="_Sig2QLBrEeq4lYpCgDzgBw" name="TalendString"/>
+  </parameters>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="false"/>
+    <elementParameter field="TABLE" name="VALUES" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Schema"/>
+      <elementValue elementRef="VALUE" value=""/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="PBIOLOGY&#13;&#10;PCOMPBIOL&#13;&#10;PGENETICS&#13;&#10;PMEDICINE&#13;&#10;PNTD&#13;&#10;PONE&#13;&#10;PPATHOGENS"/>
+    <elementParameter field="TEXT" name="LABEL" value="Source_Database_Name"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column comment="" key="false" length="-1" name="Schema" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFlowToIterate_1"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Iteration"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.database_Name=row1.Schema;&#10;System.out.println(context.database_Name);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Context_storing"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="EM_DOCUMENT"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Prod"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_YC4VhK1gEeq84N0YKNweaQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT"/>
+    <metadata connector="FLOW" name="tRunJob_1"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_2"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="EM_DOCUMENT_Delete_Job_PROD"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Prod"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_LPFzsJD1EeqfLbRteCtEpA"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT"/>
+    <metadata connector="FLOW" name="tRunJob_2"/>
+  </node>
+  <node componentName="tBigQuerySQLRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="992" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQuerySQLRow_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
+    <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:2CLuEpvwcOqlpcmJ2j72jwFhwEYSRIc4xNg8EmJs"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;CREATE TABLE &quot;+context.dataset+&quot;.&quot;+context.Target_Table+&quot; ( &#13;&#10;DTITLE STRING,   &#13;&#10;DNOTE STRING,   &#13;&#10;CATEGORY STRING,   &#13;&#10;RECEIVED DATETIME,       &#13;&#10;REVISION INT64,   &#13;&#10;DSTATUS INT64,   &#13;&#10;STATUSDATE DATETIME,       &#13;&#10;DDISPOSIID INT64,   &#13;&#10;AUTHDAYS INT64,   &#13;&#10;PUBDATE DATETIME,       &#13;&#10;SETPAGES    NUMERIC,       &#13;&#10;PR INT64,PAGES STRING,   &#13;&#10;PUBVOLUME STRING,   &#13;&#10;PUBISSUE STRING,   &#13;&#10;TOC INT64,   &#13;&#10;PUBDNUMBER STRING,   &#13;&#10;SUBNUMBER STRING,   &#13;&#10;LASTUPDATE DATETIME,       &#13;&#10;DOCUMENTID INT64,   &#13;&#10;DDISPOSIDATE DATETIME,       &#13;&#10;ORIGINAL_SUBMISSION_START_DATE DATETIME,       &#13;&#10;AUTHORITATIVE_VERSION STRING,   &#13;&#10;DCATEGOID INT64,   &#13;&#10;MINREVREQD INT64,   &#13;&#10;INVITERESPONSEDAYS INT64,   &#13;&#10;DISPMANUNOTESFLAG BOOL,&#13;&#10;DOI STRING,   &#13;&#10;ABSTRACT_TEXT STRING,   &#13;&#10;SECTIONID INT64,   &#13;&#10;ENTER_ARTICLE_TITLE INT64,   &#13;&#10;SELECT_ARTICLE_TYPE INT64,   &#13;&#10;ADD_EDIT_REMOVE_AUTHORS INT64,   &#13;&#10;SELECT_SECTION_CATEGORY INT64,   &#13;&#10;SUBMIT_ABSTRACT INT64,   &#13;&#10;ENTER_KEYWORDS INT64,   &#13;&#10;SELECT_CLASSIFICATIONS INT64,   &#13;&#10;ENTER_COMMENTS INT64,   &#13;&#10;REQUEST_EDITOR INT64,   &#13;&#10;ATTACH_FILES INT64,   &#13;&#10;DIRECT_TO_EDITOR_ID INT64,   &#13;&#10;CORR_EDITOR_ID INT64,   &#13;&#10;DAYSTOREVISE INT64,   &#13;&#10;EDITORIALPROCESSCLOSED BOOL,&#13;&#10;FINALDECISIONDATE DATETIME,       &#13;&#10;COMMENTARIES_INVITED BOOL,&#13;&#10;COMMENTARIES_CLOSED BOOL,&#13;&#10;RELATED_DOCUMENTID INT64,   &#13;&#10;ZIP_STATUS_ID INT64,   &#13;&#10;ZIP_DATE DATETIME,       &#13;&#10;EDIT_SUBMISSION_STATUS_ID INT64,   &#13;&#10;EDIT_SUBMISSION_STATUS_DATE DATETIME,       &#13;&#10;CHOOSE_REGION BOOL,&#13;&#10;REGIONID INT64,   &#13;&#10;ADDITIONAL_INFORMATION INT64,   &#13;&#10;RC_RESULTS_FOR_AUTH_VERSION INT64,   &#13;&#10;OLD_DIRECT_TO_EDITOR_ID INT64,   &#13;&#10;OLD_CORR_EDITOR_ID INT64,   &#13;&#10;SHORT_TITLE STRING,   &#13;&#10;FULL_TITLE_LIMIT_COUNT INT64,   &#13;&#10;SHORT_TITLE_LIMIT_COUNT INT64,   &#13;&#10;ABSTRACT_LIMIT_COUNT INT64,   &#13;&#10;COMMENTS_LIMIT_COUNT INT64,   &#13;&#10;LIMIT_KEYWORDS_COUNT INT64,   &#13;&#10;SUGGEST_REVIEWERS INT64,   &#13;&#10;OPPOSE_REVIEWERS INT64,   &#13;&#10;RESPOND_TO_REVIEWERS INT64,   &#13;&#10;DISPTECHNOTESFLAG BOOL,&#13;&#10;TECHNOTES STRING,   &#13;&#10;TECHCOMMENTS STRING,   &#13;&#10;PRODUCTION_NOTES STRING,   &#13;&#10;PRODUCTION_STATUS INT64,   &#13;&#10;DATE_PRODUCTION_WAS_INITIATED DATETIME,       &#13;&#10;DATE_PRODUCTION_WAS_COMPLETED DATETIME,       &#13;&#10;START_PAGE STRING,   &#13;&#10;END_PAGE STRING,   &#13;&#10;CORR_PROD_ED_ID INT64,   &#13;&#10;OLD_CORR_PROD_ED_ID INT64,   &#13;&#10;CORR_PROD_ED_ROLEID INT64,   &#13;&#10;CORR_PROD_ED_ROLEFAMILY STRING,   &#13;&#10;ONLINE_PUB_DATE DATETIME,       &#13;&#10;TARGET_ONLINE_PUB_DATE DATETIME,       &#13;&#10;ACTUAL_ONLINE_PUB_DATE DATETIME,       &#13;&#10;IMPORT_DATE DATETIME,       &#13;&#10;PRE_RESCINDED_STATUS_ID INT64,   &#13;&#10;DATE_FIRST_ENTERED_PRODUCTION DATETIME,       &#13;&#10;PWID_ID INT64,   &#13;&#10;Row_LastModified_TimeStamp DATETIME,       &#13;&#10;FINAL_DECISION_EDITOR_ID INT64,   &#13;&#10;CREATED_USING_SHORT_ INT64,ERFACE BOOL,&#13;&#10;FIRST_RECEIPT_DATE DATETIME,       &#13;&#10;TRANSFER_FROM_STATUS INT64,   &#13;&#10;TRANSFER_TO_STATUS INT64,   &#13;&#10;TRANSFERRED_FROM_SITE_ID INT64,   &#13;&#10;TRANSFERRED_TO_SITE_ID INT64,   &#13;&#10;ACTIVE_DISCUSSION BOOL,&#13;&#10;ISO_REGION_CODE STRING,   &#13;&#10;CUSTOM_REGION_ID INT64,   &#13;&#10;NUMDAYS_UNINVITE_AFTER_REVIEW_DUEDATE INT64,   &#13;&#10;UNASSIGN_REVIEWER_WITH_REVIEW_INPROGRESS BOOL,&#13;&#10;IS_EDITORIAL_SUBMISSION BOOL,&#13;&#10;FINAL_DISPOSITION_SET_DURING_SUBMISSION_PROCESS BOOL,&#13;&#10;BONA_FIDE_SUBMISSION BOOL,&#13;&#10;ARCHIVE_COMPLETE BOOL,&#13;&#10;NEAR_ARCHIVE_COMPLETE BOOL,&#13;&#10;FUNDING_INFORMATION_STEP_COMPLETE INT64,   &#13;&#10;FUNDING_INFORMATION_NOT_AVAILABLE BOOL,&#13;&#10;FIRST_DECISION_EDITOR_ASSIGNMENT_ID INT64,   &#13;&#10;FINAL_DECISION_EDITOR_ASSIGNMENT_ID INT64,   &#13;&#10;TRANSFERRED_TO_PUBLICATION_CODE STRING,   &#13;&#10;TRANSFERRED_TO_PUBLICATION_NAME STRING,   &#13;&#10;TRANSFERRED_TO_DOCUMENTID INT64,   &#13;&#10;CONTRIBUTOR_ROLES_TAXONOMY_VERSION INT64,   &#13;&#10;HAS_AUTHOR_DATA_CHANGES BOOL,&#13;&#10;TITLES_LOCKED INT64,   &#13;&#10;REQUEST_WAIVER INT64,   &#13;&#10;SELECT_REGION INT64,   &#13;&#10;PREPR INT64,_DOI STRING,   &#13;&#10;GLOBAL_MS_ID STRING,   &#13;&#10;GLOBAL_MS_ID_EDITED BOOL,&#13;&#10;ATTACH_PRIMARY_MANUSCRIPT_FILE INT64,   &#13;&#10;USE_DAYS_TO_REVISE_BY_DECISION_TERM BOOL,&#13;&#10;REVISION_REVIEW_POLICY INT64,   &#13;&#10;EARLY_PROOF_URL STRING,   &#13;&#10;EARLY_PROOF_URL_EDITED BOOL,&#13;&#10;ATTACH_ADDITIONAL_FILES BOOL,&#13;&#10;TASK_MANAGER_STATUS INT64,   &#13;&#10;DATE_FIRST_ENTERED_TASK_MANAGER DATETIME,       &#13;&#10;DATE_TASK_MANAGER_WAS_COMPLETED DATETIME,       &#13;&#10;IS_IN_ACDC BOOL,&#13;&#10;JOURNAL STRING,&#13;&#10;EDW_CREATEDDATE DATETIME,&#13;&#10;EDW_UPDATEDDATE DATETIME,&#13;&#10;UPDATED_FLAG BOOL,PROCESSED_FLAG BOOL,DELETED_FLAG&#9;BOOL&#13;&#10;);&quot;"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" show="false" value="&quot;C:/Talend/Talend-Studio-20200219_1130-V7.3.1/workspace/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" show="false" value="AUTO"/>
+    <elementParameter field="TEXT" name="LABEL" value="Create script"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQuerySQLRow_1"/>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tFlowToIterate_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_1" target="tJava_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tRunJob_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tRunJob_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQuerySQLRow_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d2c2f65d-aa13-4511-96e7-d27442e8a106"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>RUNzniuOGW/9IgUjCVuF9yU1wcYrac2A5y7+4BXlMuOyYwWntdw75f8fXWDnoGzIl2Prjqm9f2h2&#13;
+EE3LySxz7g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7959da1a-792f-4832-beb2-24ff7047b40b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1BmJn7tFTGJIUy9pBXzfOhP/yKnrSsR0s1YvwP+Znl56qml3uzTdkcan5S5Ec1+leCt5l5XVGCUM&#13;
+GgO6lLt6qA==</DigestValue></Reference></SignedInfo><SignatureValue>L3mx0qKr+MbVySecHwynw3m6+aMTVQc85oF4wl/egWVKEWI5LDZoYQkgUnIRSqrcZjtr3wS+LG/4&#13;
+iSXhlJNgfNyYPYNgp7XyYbHonTjnWlXaXPK+uv/Y5zh8tG2Tv+g5iaqLyGVyn93TB8nXdYpXkQV8&#13;
+GNAOK7koyd44749iHb4zu46DAtgaj8FoghFWloa9rCCOQ7rxOyxjER8tZwSlWUCkuNZW/kYg6NSh&#13;
+rz4oxX7OK4NfI91uMvPAa38VyYerhn8Ppnyx6fzvAJKa5vjknpsg/zugvpfCUiKtZDyZgWCt6agV&#13;
+OLaZTYofOPspUD/EWrV8QLL+HGspCc/Uf/Fgkg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7959da1a-792f-4832-beb2-24ff7047b40b" Target="#_d2c2f65d-aa13-4511-96e7-d27442e8a106"><Timestamp>2020-06-17 07:43:39</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
