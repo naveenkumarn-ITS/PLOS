@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_RqnTALBtEeqKIagzToqdcg">
+    <contextParameter comment="" name="PLOS_12000_Login" prompt="PLOS_12000_Login?" promptNeeded="false" type="id_String" value="speedy" xmi:id="_RqnTAbBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_12000_AdditionalParams" prompt="PLOS_12000_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_RqnTArBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_12000_Password" prompt="PLOS_12000_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:12ngZFiZltvgVLdJf5L0GaSb/4KPvBtLSH6eJLYETGB/8gec" xmi:id="_RqnTA7BtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_12000_Server" prompt="PLOS_12000_Server?" promptNeeded="false" type="id_String" value="customerreporting.editorialmanager.com:12000" xmi:id="_RqnTBLBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_12000_Port" prompt="PLOS_12000_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_RqnTBbBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_12000_Schema" prompt="PLOS_12000_Schema?" promptNeeded="false" type="id_String" value="" xmi:id="_RqnTBrBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_12000_Database" prompt="PLOS_12000_Database?" promptNeeded="false" type="id_String" value="" xmi:id="_RqnTB7BtEeqKIagzToqdcg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Prod" xmi:id="_RqnTCLBtEeqKIagzToqdcg">
+    <contextParameter comment="" name="PLOS_12000_Login" prompt="PLOS_12000_Login?" promptNeeded="false" type="id_String" value="speedy" xmi:id="_RqnTCbBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_12000_AdditionalParams" prompt="PLOS_12000_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_RqnTCrBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_12000_Password" prompt="PLOS_12000_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:2ut8kea9a5V4BCtGMLE7p3DD3I5dOcfj7zomCZKG4U+IZELD" xmi:id="_RqnTC7BtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_12000_Server" prompt="PLOS_12000_Server?" promptNeeded="false" type="id_String" value="customerreporting.editorialmanager.com:12000" xmi:id="_RqnTDLBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_12000_Port" prompt="PLOS_12000_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_RqnTDbBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_12000_Schema" prompt="PLOS_12000_Schema?" promptNeeded="false" type="id_String" value="" xmi:id="_RqnTDrBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_12000_Database" prompt="PLOS_12000_Database?" promptNeeded="false" type="id_String" value="" xmi:id="_RqnTD7BtEeqKIagzToqdcg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Test" xmi:id="_RqnTELBtEeqKIagzToqdcg">
+    <contextParameter comment="" name="PLOS_12000_Login" prompt="PLOS_12000_Login?" promptNeeded="false" type="id_String" value="speedy" xmi:id="_RqnTEbBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_12000_AdditionalParams" prompt="PLOS_12000_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_RqnTErBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_12000_Password" prompt="PLOS_12000_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:3+4rPRhFSIz+OFKmEVay+dCSeodAWnyL0X78pJmSlyUHM/JP" xmi:id="_RqnTE7BtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_12000_Server" prompt="PLOS_12000_Server?" promptNeeded="false" type="id_String" value="customerreporting.editorialmanager.com:12000" xmi:id="_RqnTFLBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_12000_Port" prompt="PLOS_12000_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_RqnTFbBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_12000_Schema" prompt="PLOS_12000_Schema?" promptNeeded="false" type="id_String" value="" xmi:id="_RqnTFrBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_12000_Database" prompt="PLOS_12000_Database?" promptNeeded="false" type="id_String" value="" xmi:id="_RqnTF7BtEeqKIagzToqdcg"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_81867336-ad16-43b5-9669-7a11d9aaf88f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3BQcnJ1LHcpBKmqFP87tajBozpeIrvtUSFhsWba/oW1QqPLWbXbRm0SXnf148cAH1bjHxXCAmOhz&#13;
+p0e31juWVA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f9344382-f6d1-471c-b2d3-4084ed347f8b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zQvNRf7YPgYNYS1sR0mZhDM2f+AnNOK/GmyUAyxN4YCbQ2KX3w9Hcrrxo4j4cuuayK7C+rZC93cm&#13;
+N8bHTbp2Qg==</DigestValue></Reference></SignedInfo><SignatureValue>doujUWZ0FazNqJvPXkbDGi7TQj72semppNuTmr1/NkfzkWQfFS1tHMe9AE2V1nI7cIVOgmmbniPR&#13;
+H6j/UsbvUi3o30mrs7GF3ubEFXM8AnFsjWmCiof6nUdQB42HN7XqXN5l17YHkW+wEP0dtMpG3SZN&#13;
+wFNCNw7x6nMX0Lbr3OixR2uu8yoTpvtQOSY5NLg3rjW42Q4O/yICVrLMts21BAqWLw/UCD1HAGpU&#13;
+vGQP66cP00aH9vpG8JiMe3g85dhMOewoMKs9FgK271gY6lgiKJGuhb+4IHY579aYy6eB2uH1jt67&#13;
+4REPhoOzutiFy1JzP/u9ipyFuCUwwR8tcsSwFg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f9344382-f6d1-471c-b2d3-4084ed347f8b" Target="#_81867336-ad16-43b5-9669-7a11d9aaf88f"><Timestamp>2020-06-17 07:36:37</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

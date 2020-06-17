@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_ReHvILBtEeqKIagzToqdcg">
+    <contextParameter comment="" name="Mail_from" prompt="Mail_from?" promptNeeded="false" type="id_String" value="achitambaram@plos.org" xmi:id="_ReIWMLBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="Mail_To" prompt="Mail_To?" promptNeeded="false" type="id_String" value="alagu@itshoulders.com,jeyaram@itshoulders.com" xmi:id="_ReIWMbBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="Mail_Username" prompt="Mail_Username?" promptNeeded="false" type="id_String" value="alagu@itshoulders.com" xmi:id="_ReIWMrBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" type="id_String" value="smtp.1and1.com" xmi:id="_ReIWM7BtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" type="id_String" value="587" xmi:id="_ReIWNLBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="Mail_Password" prompt="Mail_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:G1d9jM4gNtlZR/1NuhNTbC4F9RpR33+B0IOwfCJx4kKQovLz7w==" xmi:id="_ReIWNbBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="Mail_Subject" prompt="Mail_Subject?" promptNeeded="false" type="id_String" value="Job_Status" xmi:id="_ReIWNrBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="Mail_To1" prompt="Mail_To1?" promptNeeded="false" type="id_String" value="" xmi:id="_ReIWN7BtEeqKIagzToqdcg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Prod" xmi:id="_ReIWOLBtEeqKIagzToqdcg">
+    <contextParameter comment="" name="Mail_from" prompt="Mail_from?" promptNeeded="false" type="id_String" value="achitambaram@plos.org" xmi:id="_ReIWObBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="Mail_To" prompt="Mail_To?" promptNeeded="false" type="id_String" value="alagu@itshoulders.com,jeyaram@itshoulders.com" xmi:id="_ReIWOrBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="Mail_Username" prompt="Mail_Username?" promptNeeded="false" type="id_String" value="alagu@itshoulders.com" xmi:id="_ReIWO7BtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" type="id_String" value="smtp.1and1.com" xmi:id="_ReIWPLBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" type="id_String" value="587" xmi:id="_ReIWPbBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="Mail_Password" prompt="Mail_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:hPg1RXJxP58gDWQpsnGYB7SIKC+03Fv10kD7DEDLyX6Xpax6ZA==" xmi:id="_ReIWPrBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="Mail_Subject" prompt="Mail_Subject?" promptNeeded="false" type="id_String" value="Job_Status" xmi:id="_ReIWP7BtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="Mail_To1" prompt="Mail_To1?" promptNeeded="false" type="id_String" value="alagu@itshoulders.com,jeyaram@itshoulders.com,naveenkumarn@itshoulders.com" xmi:id="_ReIWQLBtEeqKIagzToqdcg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Test" xmi:id="_ReIWQbBtEeqKIagzToqdcg">
+    <contextParameter comment="" name="Mail_from" prompt="Mail_from?" promptNeeded="false" type="id_String" value="achitambaram@plos.org" xmi:id="_ReIWQrBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="Mail_To" prompt="Mail_To?" promptNeeded="false" type="id_String" value="alagu@itshoulders.com,jeyaram@itshoulders.com" xmi:id="_ReIWQ7BtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="Mail_Username" prompt="Mail_Username?" promptNeeded="false" type="id_String" value="alagu@itshoulders.com" xmi:id="_ReIWRLBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" type="id_String" value="smtp.1and1.com" xmi:id="_ReIWRbBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" type="id_String" value="587" xmi:id="_ReIWRrBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="Mail_Password" prompt="Mail_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:P9NsfoLo/WuUpaF4dTzDFV6vH1kTLxVETteuOoCbiE3/iiZeLg==" xmi:id="_ReIWR7BtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="Mail_Subject" prompt="Mail_Subject?" promptNeeded="false" type="id_String" value="Job_Status" xmi:id="_ReIWSLBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="Mail_To1" prompt="Mail_To1?" promptNeeded="false" type="id_String" value="" xmi:id="_ReIWSbBtEeqKIagzToqdcg"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_abc0e76f-25d0-48d1-b272-379b85d55e2b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>RryjXWTgGDPecWn5l9BO652tCAHSGznjdFA6qJxM7d9K+Z/ndcPhem/dmvjlPNnjovQtNq99SokQ&#13;
+TklU07Z+hA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_515d7d18-7cb5-4e4e-93d4-745b88a4ce49"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>WQfBc2b2TCPTLINAy+jDE9lEnXePh9CW+4RdA+W/+phwpBMi5iqtXFmQaGKfEgWeDIUDNKDjCOoH&#13;
+GRbCya7piw==</DigestValue></Reference></SignedInfo><SignatureValue>bRO6AVklKRRgeo4z4uwuezb7tnd7rm8bjJjxvXrBcFvqwA36y0hgtUJbflkqbj6RriY9PM5SDsd0&#13;
+TRS7ezi29BO2dZUuRq8cDXPT+NqI9zRzh1xGVvIQ+F3B6FX3rq7hxIk/zAvdj2ha3isNAdkvgd0i&#13;
+yn1IG9NXSd/9xcXYmxe/AmUi1zbvjKgyzhrZOW1cThxdRDItnLteGd0IUll2QvItt9Uw4lmzH92R&#13;
+g1wJxWX0LSIU7SgrHQq8wEAjBJdcdNjxagGylPVLdsL9DCLPHWKqeolkaxgtrbq5AlOiXZcb0m+E&#13;
+JXI+FOhdfK3ZAG3FHaQaWwMJf6r/ccw44ykX3Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_515d7d18-7cb5-4e4e-93d4-745b88a4ce49" Target="#_abc0e76f-25d0-48d1-b272-379b85d55e2b"><Timestamp>2020-06-17 07:36:36</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

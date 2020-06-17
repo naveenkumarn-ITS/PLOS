@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Prod" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="table_Name" prompt="table_Name?" promptNeeded="false" type="id_String" value="DSTATUS"/>
+    <contextParameter comment="" name="DL_Table" prompt="DL_Table?" promptNeeded="false" type="id_String" value="EM_DSTATUS"/>
+    <contextParameter comment="" name="SurrogateKey" prompt="SurrogateKey?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="DW_Table" prompt="DW_Table?" promptNeeded="false" type="id_String" value="STATUS_EM_D"/>
+    <contextParameter comment="" name="DW_TempTable" prompt="DW_TempTable?" promptNeeded="false" type="id_String" value="DSTATUS_EM_D_temp"/>
+    <contextParameter comment="" name="pk_identifier" prompt="pk_identifier?" promptNeeded="false" type="id_String" value="T.DSTATUSID = S.DSTATUSID"/>
+    <contextParameter comment="" name="count" prompt="count?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="delete_id" prompt="delete_id?" promptNeeded="false" type="id_String" value="'-100',"/>
+    <contextParameter comment="" name="ControlTable_name" prompt="ControlTable_name?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="CONTROL_TABLE"/>
+    <contextParameter comment="" name="bucket_name" prompt="bucket_name?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="plos-data-talend-em"/>
+    <contextParameter comment="" name="DL_dataset" prompt="DL_dataset?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="PLOSDL_DEV"/>
+    <contextParameter comment="" name="Update_deleted_id" prompt="Update_deleted_id?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="-100,"/>
+    <contextParameter comment="" name="Local_filename" prompt="Local_filename?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="/opt/talend/ipaas/rt-flow/TalendJobServersFile/repository/"/>
+    <contextParameter comment="" name="startdate" prompt="startdate?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value=""/>
+    <contextParameter comment="" name="GCS_Filepath" prompt="GCS_Filepath?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="gs://plos-data-talend-em/"/>
+    <contextParameter comment="" name="Audit_Dataset" prompt="Audit_Dataset?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="RUNBOOK_DEV"/>
+    <contextParameter comment="" name="GCS_AccessKey" prompt="GCS_AccessKey?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="GOOG3ER2KFMJUKRJBTDXTHWR"/>
+    <contextParameter comment="" name="database_Name" prompt="database_Name?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value=""/>
+    <contextParameter comment="" name="resource_file_ServiceAccountKey" prompt="resource_file_ServiceAccountKey?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="C:/Users/admin/Desktop/PLOS/Source_file/plos-data-2357502552d3.json"/>
+    <contextParameter comment="" name="project_id" prompt="project_id?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="plos-data"/>
+    <contextParameter comment="" name="Dimension_Key" prompt="Dimension_Key?" promptNeeded="false" type="id_String" value="STATUS_KEY"/>
+    <contextParameter comment="" name="AuditTable_name" prompt="AuditTable_name?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="AUDIT_LOG"/>
+    <contextParameter comment="" name="deleted_id" prompt="deleted_id?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="-100,"/>
+    <contextParameter comment="" name="DW_dataset" prompt="DW_dataset?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="PLOSDW_DEV"/>
+    <contextParameter comment="" name="Enddate" prompt="Enddate?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value=""/>
+    <contextParameter comment="" name="GCS_SecretKey" prompt="GCS_SecretKey?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="DTorJfwAOHaO4QScGYTnesCUALodPrhYpuk4Cejj"/>
+    <contextParameter comment="" name="ErrorLogTable_name" prompt="ErrorLogTable_name?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="ERROR_LOG"/>
+    <contextParameter comment="" name="FACT_TABLE" prompt="FACT_TABLE?" promptNeeded="false" type="id_String" value="STATUSHISTORY_F"/>
+  </context>
+  <context confirmationNeeded="false" name="Test">
+    <contextParameter comment="" name="table_Name" prompt="table_Name?" promptNeeded="false" type="id_String" value="DSTATUS"/>
+    <contextParameter comment="" name="DL_Table" prompt="DL_Table?" promptNeeded="false" type="id_String" value="EM_DSTATUS"/>
+    <contextParameter comment="" name="SurrogateKey" prompt="SurrogateKey?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="DW_Table" prompt="DW_Table?" promptNeeded="false" type="id_String" value="STATUS_EM_D"/>
+    <contextParameter comment="" name="DW_TempTable" prompt="DW_TempTable?" promptNeeded="false" type="id_String" value="DSTATUS_EM_D_temp"/>
+    <contextParameter comment="" name="pk_identifier" prompt="pk_identifier?" promptNeeded="false" type="id_String" value="T.DSTATUSID = S.DSTATUSID"/>
+    <contextParameter comment="" name="count" prompt="count?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="delete_id" prompt="delete_id?" promptNeeded="false" type="id_String" value="'-100',"/>
+    <contextParameter comment="" name="ControlTable_name" prompt="ControlTable_name?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="CONTROL_TABLE"/>
+    <contextParameter comment="" name="bucket_name" prompt="bucket_name?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="plos-data-talend-em/test"/>
+    <contextParameter comment="" name="DL_dataset" prompt="DL_dataset?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="PLOSDL_TEST"/>
+    <contextParameter comment="" name="Update_deleted_id" prompt="Update_deleted_id?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="-100,"/>
+    <contextParameter comment="" name="Local_filename" prompt="Local_filename?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="/opt/talend/ipaas/rt-flow/TalendJobServersFile/repository/test/"/>
+    <contextParameter comment="" name="startdate" prompt="startdate?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value=""/>
+    <contextParameter comment="" name="GCS_Filepath" prompt="GCS_Filepath?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="gs://plos-data-talend-em/test/"/>
+    <contextParameter comment="" name="Audit_Dataset" prompt="Audit_Dataset?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="RUNBOOK_TEST"/>
+    <contextParameter comment="" name="GCS_AccessKey" prompt="GCS_AccessKey?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="GOOG3ER2KFMJUKRJBTDXTHWR"/>
+    <contextParameter comment="" name="database_Name" prompt="database_Name?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value=""/>
+    <contextParameter comment="" name="resource_file_ServiceAccountKey" prompt="resource_file_ServiceAccountKey?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value=""/>
+    <contextParameter comment="" name="project_id" prompt="project_id?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="plos-data"/>
+    <contextParameter comment="" name="Dimension_Key" prompt="Dimension_Key?" promptNeeded="false" type="id_String" value="STATUS_KEY"/>
+    <contextParameter comment="" name="AuditTable_name" prompt="AuditTable_name?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="AUDIT_LOG"/>
+    <contextParameter comment="" name="deleted_id" prompt="deleted_id?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="-100,"/>
+    <contextParameter comment="" name="DW_dataset" prompt="DW_dataset?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="PLOSDW_TEST"/>
+    <contextParameter comment="" name="Enddate" prompt="Enddate?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value=""/>
+    <contextParameter comment="" name="GCS_SecretKey" prompt="GCS_SecretKey?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="DTorJfwAOHaO4QScGYTnesCUALodPrhYpuk4Cejj"/>
+    <contextParameter comment="" name="ErrorLogTable_name" prompt="ErrorLogTable_name?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="ERROR_LOG"/>
+    <contextParameter comment="" name="FACT_TABLE" prompt="FACT_TABLE?" promptNeeded="false" type="id_String" value="STATUSHISTORY_F"/>
+  </context>
+  <context confirmationNeeded="false" name="Prod">
+    <contextParameter comment="" name="table_Name" prompt="table_Name?" promptNeeded="false" type="id_String" value="DSTATUS"/>
+    <contextParameter comment="" name="DL_Table" prompt="DL_Table?" promptNeeded="false" type="id_String" value="EM_DSTATUS"/>
+    <contextParameter comment="" name="SurrogateKey" prompt="SurrogateKey?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="DW_Table" prompt="DW_Table?" promptNeeded="false" type="id_String" value="STATUS_EM_D"/>
+    <contextParameter comment="" name="DW_TempTable" prompt="DW_TempTable?" promptNeeded="false" type="id_String" value="DSTATUS_EM_D_temp"/>
+    <contextParameter comment="" name="pk_identifier" prompt="pk_identifier?" promptNeeded="false" type="id_String" value="T.DSTATUSID = S.DSTATUSID"/>
+    <contextParameter comment="" name="count" prompt="count?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="delete_id" prompt="delete_id?" promptNeeded="false" type="id_String" value="'-100',"/>
+    <contextParameter comment="" name="ControlTable_name" prompt="ControlTable_name?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="CONTROL_TABLE"/>
+    <contextParameter comment="" name="bucket_name" prompt="bucket_name?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="plos-data-talend-em/prod"/>
+    <contextParameter comment="" name="DL_dataset" prompt="DL_dataset?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="PLOSDL"/>
+    <contextParameter comment="" name="Update_deleted_id" prompt="Update_deleted_id?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="-100,"/>
+    <contextParameter comment="" name="Local_filename" prompt="Local_filename?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="/opt/talend/ipaas/rt-flow/TalendJobServersFile/repository/prod/"/>
+    <contextParameter comment="" name="startdate" prompt="startdate?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value=""/>
+    <contextParameter comment="" name="GCS_Filepath" prompt="GCS_Filepath?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="gs://plos-data-talend-em/prod/"/>
+    <contextParameter comment="" name="Audit_Dataset" prompt="Audit_Dataset?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="RUNBOOK"/>
+    <contextParameter comment="" name="GCS_AccessKey" prompt="GCS_AccessKey?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="GOOG3ER2KFMJUKRJBTDXTHWR"/>
+    <contextParameter comment="" name="database_Name" prompt="database_Name?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value=""/>
+    <contextParameter comment="" name="resource_file_ServiceAccountKey" prompt="resource_file_ServiceAccountKey?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value=""/>
+    <contextParameter comment="" name="project_id" prompt="project_id?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="plos-data"/>
+    <contextParameter comment="" name="Dimension_Key" prompt="Dimension_Key?" promptNeeded="false" type="id_String" value="STATUS_KEY"/>
+    <contextParameter comment="" name="AuditTable_name" prompt="AuditTable_name?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="AUDIT_LOG"/>
+    <contextParameter comment="" name="deleted_id" prompt="deleted_id?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="-100,"/>
+    <contextParameter comment="" name="DW_dataset" prompt="DW_dataset?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="PLOSDW"/>
+    <contextParameter comment="" name="Enddate" prompt="Enddate?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value=""/>
+    <contextParameter comment="" name="GCS_SecretKey" prompt="GCS_SecretKey?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="DTorJfwAOHaO4QScGYTnesCUALodPrhYpuk4Cejj"/>
+    <contextParameter comment="" name="ErrorLogTable_name" prompt="ErrorLogTable_name?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="ERROR_LOG"/>
+    <contextParameter comment="" name="FACT_TABLE" prompt="FACT_TABLE?" promptNeeded="false" type="id_String" value="STATUSHISTORY_F"/>
+  </context>
+  <context confirmationNeeded="false" name="local">
+    <contextParameter comment="" name="table_Name" prompt="table_Name?" promptNeeded="false" type="id_String" value="DSTATUS"/>
+    <contextParameter comment="" name="DL_Table" prompt="DL_Table?" promptNeeded="false" type="id_String" value="EM_DSTATUS"/>
+    <contextParameter comment="" name="SurrogateKey" prompt="SurrogateKey?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="DW_Table" prompt="DW_Table?" promptNeeded="false" type="id_String" value="STATUS_EM_D"/>
+    <contextParameter comment="" name="DW_TempTable" prompt="DW_TempTable?" promptNeeded="false" type="id_String" value="DSTATUS_EM_D_temp"/>
+    <contextParameter comment="" name="pk_identifier" prompt="pk_identifier?" promptNeeded="false" type="id_String" value="T.DSTATUSID = S.DSTATUSID"/>
+    <contextParameter comment="" name="count" prompt="count?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="delete_id" prompt="delete_id?" promptNeeded="false" type="id_String" value="'-100',"/>
+    <contextParameter comment="" name="ControlTable_name" prompt="ControlTable_name?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="CONTROL_TABLE"/>
+    <contextParameter comment="" name="bucket_name" prompt="bucket_name?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="plos-data-talend-em"/>
+    <contextParameter comment="" name="DL_dataset" prompt="DL_dataset?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="PLOSDL_DEV"/>
+    <contextParameter comment="" name="Update_deleted_id" prompt="Update_deleted_id?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="-100,"/>
+    <contextParameter comment="" name="Local_filename" prompt="Local_filename?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="/opt/talend/ipaas/rt-flow/TalendJobServersFile/repository/"/>
+    <contextParameter comment="" name="startdate" prompt="startdate?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value=""/>
+    <contextParameter comment="" name="GCS_Filepath" prompt="GCS_Filepath?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="gs://plos-data-talend-em/"/>
+    <contextParameter comment="" name="Audit_Dataset" prompt="Audit_Dataset?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="RUNBOOK_DEV"/>
+    <contextParameter comment="" name="GCS_AccessKey" prompt="GCS_AccessKey?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="GOOG3ER2KFMJUKRJBTDXTHWR"/>
+    <contextParameter comment="" name="database_Name" prompt="database_Name?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value=""/>
+    <contextParameter comment="" name="resource_file_ServiceAccountKey" prompt="resource_file_ServiceAccountKey?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="C:/Users/admin/Desktop/PLOS/Source_file/plos-data-2357502552d3.json"/>
+    <contextParameter comment="" name="project_id" prompt="project_id?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="plos-data"/>
+    <contextParameter comment="" name="Dimension_Key" prompt="Dimension_Key?" promptNeeded="false" type="id_String" value="STATUS_KEY"/>
+    <contextParameter comment="" name="AuditTable_name" prompt="AuditTable_name?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="AUDIT_LOG"/>
+    <contextParameter comment="" name="deleted_id" prompt="deleted_id?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="-100,"/>
+    <contextParameter comment="" name="DW_dataset" prompt="DW_dataset?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="PLOSDW_DEV"/>
+    <contextParameter comment="" name="Enddate" prompt="Enddate?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value=""/>
+    <contextParameter comment="" name="GCS_SecretKey" prompt="GCS_SecretKey?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="DTorJfwAOHaO4QScGYTnesCUALodPrhYpuk4Cejj"/>
+    <contextParameter comment="" name="ErrorLogTable_name" prompt="ErrorLogTable_name?" promptNeeded="false" repositoryContextId="_naUX06CiEeqlDcwoj8TFHg" type="id_String" value="ERROR_LOG"/>
+    <contextParameter comment="" name="FACT_TABLE" prompt="FACT_TABLE?" promptNeeded="false" type="id_String" value="STATUSHISTORY_F"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" show="false" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms1024M&quot;,&quot;-Xmx2048M&quot;]}"/>
+    <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" show="false" value="true"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:dthGVzVE9ahfH+P+6sqe8vMDB4bEuQZSxOTR/JH6"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/admin/Desktop/PLOS/Job_backups/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:XvtIBTiiU/vE4A+Qxk/bk9wlhlf69w2WUw9wRXKO"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_SjQdILBrEeq4lYpCgDzgBw" name="DQTechnical"/>
+    <routinesParameter id="_SiyjELBrEeq4lYpCgDzgBw" name="DataMasking"/>
+    <routinesParameter id="_SgWTELBrEeq4lYpCgDzgBw" name="DataOperation"/>
+    <routinesParameter id="_SjBMkLBrEeq4lYpCgDzgBw" name="DataQualityDependencies"/>
+    <routinesParameter id="_Si6e4LBrEeq4lYpCgDzgBw" name="DataQuality"/>
+    <routinesParameter id="_SjLkoLBrEeq4lYpCgDzgBw" name="DqStringHandling"/>
+    <routinesParameter id="_Sh9coLBrEeq4lYpCgDzgBw" name="Mathematical"/>
+    <routinesParameter id="_SiDjQLBrEeq4lYpCgDzgBw" name="Numeric"/>
+    <routinesParameter id="_SiKQ8LBrEeq4lYpCgDzgBw" name="Relational"/>
+    <routinesParameter id="_SitDgLBrEeq4lYpCgDzgBw" name="SQLike"/>
+    <routinesParameter id="_SiPwgLBrEeq4lYpCgDzgBw" name="StringHandling"/>
+    <routinesParameter id="_SiV3ILBrEeq4lYpCgDzgBw" name="TalendDataGenerator"/>
+    <routinesParameter id="_SibWsLBrEeq4lYpCgDzgBw" name="TalendDate"/>
+    <routinesParameter id="_Sim84LBrEeq4lYpCgDzgBw" name="TalendStringUtil"/>
+    <routinesParameter id="_Sig2QLBrEeq4lYpCgDzgBw" name="TalendString"/>
+  </parameters>
+  <node componentName="tBigQuerySQLRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQuerySQLRow_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
+    <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:ZFjbVyqb1e+qFmFhabgdkRvb+X1Zg+dTn9BpE/XV"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;create or replace table &quot;+context.DW_dataset+&quot;.&quot;+context.DW_Table+&quot; as&#13;&#10;select ROW_NUMBER() OVER() AS CATEGORY_KEY,&#13;&#10;DCATEGOID,JOURNAL,NAME,DAYSTOREVIEW,QUESTIONNAIREIDNEW,QUESTIONNAIREIDREV,HIDE,MINREVREQD,EDITORIAL_WORKFLOW_ID,&#13;&#10;NUMDAYS_UNINVITE_AFTER_REVIEW_DUEDATE,Row_LastModified_TimeStamp,AUTHOR_QUESTIONNAIREID_NEW,&#13;&#10;AUTHOR_QUESTIONNAIREID_REV,DAYSTOREVISESUBREV,USE_DAYS_TO_REVISE_BY_DECISION_TERM,DAYSTOREVISEFIRSTREV,&#13;&#10;EDW_CREATEDDATE,EDW_UPDATEDDATE,DELETED_FLAG&#13;&#10;from &quot;+context.DL_dataset+&quot;.&quot;+context.DL_Table+&quot;&quot;"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" show="false" value="&quot;C:/Talend/Talend-Studio-20200219_1130-V7.3.1/workspace/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" show="false" value="AUTO"/>
+    <elementParameter field="TEXT" name="LABEL" value="DL to DW - Initial Load"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQuerySQLRow_2"/>
+  </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_2"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="bigquery_id"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
+    <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:R+mm3xoa8dUFnmpxfEV0DnU02IGhvYdNFvdW47l+"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select DSTATUSID, JOURNAL, NAME, ROLEFAMILY, Row_LastModified_TimeStamp, &#13;&#10;EDW_CREATEDDATE, EDW_UPDATEDDATE, DELETED_FLAG&#13;&#10;from &quot;+context.DL_dataset+ &quot;.&quot;+context.DL_Table+&quot;&#13;&#10;where DELETED_FLAG = false and PROCESSED_FLAG = false&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="SMALL"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" show="false" value="&quot;C:/Talend/Talend-Studio-20200219_1130-V7.3.1/workspace/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CUSTOM_TEMPORARY_DATASET" show="false" value="false"/>
+    <elementParameter field="TEXT" name="TEMPORARY_DATASET_NAME" show="false" value="&quot;temp_dataset&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="DL_Source"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryInput_2">
+      <column comment="" key="false" length="-1" name="DSTATUSID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="JOURNAL" nullable="true" originalLength="25" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ROLEFAMILY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Row_LastModified_TimeStamp" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EDW_CREATEDDATE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EDW_UPDATEDDATE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DELETED_FLAG" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_GsNo0KroEeq6cLg_G3MQKw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out1">
+      <column comment="" key="false" length="-1" name="STATUS_KEY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DSTATUSID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="JOURNAL" nullable="true" originalLength="25" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ROLEFAMILY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPOSITION_FLAG" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPOSITION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Row_LastModified_TimeStamp" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EDW_CREATEDDATE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EDW_UPDATEDDATE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DELETED_FLAG" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="out1" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="Relational.ISNULL(row3.STATUS_KEY)?&#13;&#10;Numeric.sequence(&quot;s1&quot;,context.SurrogateKey+1,1):&#13;&#10;row3.STATUS_KEY " name="STATUS_KEY" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row1.DSTATUSID " name="DSTATUSID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row1.JOURNAL " name="JOURNAL" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.NAME " name="NAME" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.ROLEFAMILY " name="ROLEFAMILY" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="" name="DISPOSITION_FLAG" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries name="DISPOSITION" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Row_LastModified_TimeStamp " name="Row_LastModified_TimeStamp" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.EDW_CREATEDDATE " name="EDW_CREATEDDATE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.EDW_UPDATEDDATE " name="EDW_UPDATEDDATE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DELETED_FLAG " name="DELETED_FLAG" nullable="true" type="id_Boolean"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="DSTATUSID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="JOURNAL" nullable="true" type="id_String"/>
+        <mapperTableEntries name="NAME" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ROLEFAMILY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Row_LastModified_TimeStamp" nullable="true" type="id_String"/>
+        <mapperTableEntries name="EDW_CREATEDDATE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="EDW_UPDATEDDATE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DELETED_FLAG" nullable="true" type="id_Boolean"/>
+      </inputTables>
+      <inputTables activateCondensedTool="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="" name="STATUS_KEY" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row1.DSTATUSID" name="DSTATUSID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row1.JOURNAL" name="JOURNAL" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tBigQueryOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryOutput_1"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="bigquery_id"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.Local_filename+&quot;&quot;+context.DW_Table+&quot;.csv&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
+    <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:9GVBsW1XRUtUgXZcXy9fiyFsZCjsufuG0k0y2Vs2"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
+    <elementParameter field="TEXT" name="DATASET" value="context.DW_dataset"/>
+    <elementParameter field="TEXT" name="TABLE" value="context.DW_Table"/>
+    <elementParameter field="CHECK" name="CREATE_TABLE_IF_NOT_EXIST" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="APPEND"/>
+    <elementParameter field="CHECK" name="BULK_FILE_ALREADY_EXIST" show="false" value="false"/>
+    <elementParameter field="TEXT" name="GS_ACCESS_KEY" value="context.GCS_AccessKey"/>
+    <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="enc:system.encryption.key.v1:3B2+m9FQwHVeocp+XwJcKwVcvf96fGvL4Eu5G6sPULbfm0am0qlftX1t/pWnirg0eA=="/>
+    <elementParameter field="TEXT" name="BUCKET_NAME" value="context.bucket_name"/>
+    <elementParameter field="TEXT" name="GS_FILE" value="context.GCS_Filepath+&quot;&quot;+context.DW_Table+&quot;.csv&quot;"/>
+    <elementParameter field="TEXT" name="GS_FILE_HEADER" value="0"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" show="false" value="&quot;C:/Talend/Talend-Studio-20200219_1130-V7.3.1/workspace/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="SET_FIELD_DELIMITER" show="false" value="true"/>
+    <elementParameter field="TEXT" name="FIELD_DELIMITER" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="DROP" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;\\&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;\&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="RECORDS_CONTAIN_NULL_VALUE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_DISK_SPACE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="DW_INSERT"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryOutput_1">
+      <column comment="" key="false" length="-1" name="STATUS_KEY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DSTATUSID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="JOURNAL" nullable="true" originalLength="25" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ROLEFAMILY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPOSITION_FLAG" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="BOOLEAN" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPOSITION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Row_LastModified_TimeStamp" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EDW_CREATEDDATE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EDW_UPDATEDDATE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DELETED_FLAG" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="BOOLEAN" type="id_Boolean" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_4"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="bigquery_id"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
+    <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:6zx95yOFmE+Ud3qtBXyWp6052zb36i6FNJAwD37x"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select * FROM &quot;+context.DW_dataset+&quot;.&quot;+context.DW_TempTable+&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="SMALL"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" show="false" value="&quot;C:/Talend/Talend-Studio-20200219_1130-V7.3.1/workspace/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CUSTOM_TEMPORARY_DATASET" show="false" value="false"/>
+    <elementParameter field="TEXT" name="TEMPORARY_DATASET_NAME" show="false" value="&quot;temp_dataset&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="TempTable"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryInput_4">
+      <column comment="" key="false" length="-1" name="STATUS_KEY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DSTATUSID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="JOURNAL" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="STATUS_D_Delete_Job"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Prod"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value=""/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Delete Job"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT"/>
+    <metadata connector="FLOW" name="tRunJob_1"/>
+  </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="8" offsetLabelY="6" posX="128" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_1"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="bigquery_id"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
+    <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:KOM7XMr9ygb3sT46fSd+rAo3Ob2f3mE4YzLNctO0"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select ifnull(max(&quot;+context.Dimension_Key+&quot;),0) as SurrogateKey&#13;&#10;from &quot;+context.DW_dataset+&quot;.&quot;+context.DW_Table+&quot;&#13;&#10;where STATUS_KEY NOT IN (-99999,-88888)&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="SMALL"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" show="false" value="&quot;C:/Talend/Talend-Studio-20200219_1130-V7.3.1/workspace/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="USE_CUSTOM_TEMPORARY_DATASET" show="false" value="false"/>
+    <elementParameter field="TEXT" name="TEMPORARY_DATASET_NAME" show="false" value="&quot;temp_dataset&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="DW_Table"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryInput_1">
+      <column comment="" key="false" length="-1" name="SurrogateKey" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#13;&#10;//output_row.EDW_UPDATEDDATE = input_row.EDW_UPDATEDDATE;&#13;&#10;//output_row.SurrogateKey = input_row.SurrogateKey;&#13;&#10;&#10;&#10;context.SurrogateKey = input_row.SurrogateKey;&#10;&#10;System.out.println(&quot;Max_SurrogateKey :&quot; + context.SurrogateKey);&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Store SurrogateKey"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_1"/>
+  </node>
+  <node componentName="tBigQuerySQLRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQuerySQLRow_3"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
+    <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:ud8Im2k8mIWp+MtnPPFvH7sHmhnpkR/UUrKXjAfr"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;drop table if exists &quot;+context.DW_dataset+&quot;.&quot;+context.DW_TempTable+&quot;&quot;"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" show="false" value="&quot;C:/Talend/Talend-Studio-20200219_1130-V7.3.1/workspace/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" show="false" value="AUTO"/>
+    <elementParameter field="TEXT" name="LABEL" value="Drop_temp_table"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQuerySQLRow_3"/>
+  </node>
+  <node componentName="tBigQuerySQLRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="992" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQuerySQLRow_5"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
+    <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:WcAJ5L3oqZCo+s2H3CtP3C/oVx8P21j3x/3S6X0x"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;update &quot;+context.DL_dataset+ &quot;.&quot;+context.DL_Table+&quot; set PROCESSED_FLAG = true where true&quot;"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" show="false" value="&quot;C:/Talend/Talend-Studio-20200219_1130-V7.3.1/workspace/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" show="false" value="AUTO"/>
+    <elementParameter field="TEXT" name="LABEL" value="Update Processed Flag in DL"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQuerySQLRow_5"/>
+  </node>
+  <node componentName="tBigQuerySQLRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQuerySQLRow_1"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
+    <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:ao+GRJaNlmY7MGa2XUnNcREni1275oQbIA3DbD5g"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;Update  &quot;+context.DW_dataset+&quot;.&quot;+context.FACT_TABLE+&quot;&#13;&#10;Set STATUS_KEY=-88888 where STATUS_KEY in (Select STATUS_KEY from  &quot;+context.DW_dataset+&quot;.&quot;+context.DW_Table+&quot; where DELETED_FLAG=True)&quot;"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" show="false" value="&quot;C:/Users/lenovo/AppData/Local/Temp/Rar$EXa0.056/Talend-Studio-20200219_1130-V7.3.1/workspace/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" show="false" value="AUTO"/>
+    <elementParameter field="TEXT" name="LABEL" value="UPDATE_FACT_TABLE"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQuerySQLRow_1"/>
+  </node>
+  <node componentName="tBigQuerySQLRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQuerySQLRow_4"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
+    <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:LWLY3mHPYnr45vp6koRTu6gE2gZ/sg3krFDAgUZg"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;Delete from  &quot;+context.DW_dataset+&quot;.&quot;+context.DW_Table+&quot; where DELETED_FLAG=TRUE&quot;"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" show="false" value="&quot;C:/Users/lenovo/AppData/Local/Temp/Rar$EXa0.056/Talend-Studio-20200219_1130-V7.3.1/workspace/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" show="false" value="AUTO"/>
+    <elementParameter field="TEXT" name="LABEL" value="DELETE FROM_DELETED_FLAG"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQuerySQLRow_4"/>
+  </node>
+  <node componentName="tBigQuerySQLRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQuerySQLRow_6"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
+    <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.resource_file_ServiceAccountKey"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:fTEU6GLMQLMZUu9AZBB5gyiK5blNZwaGLCNFuXXg"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.project_id"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;update  &quot;+context.DL_dataset+ &quot;.&quot;+context.DL_Table+&quot;  set   PROCESSED_FLAG=true where PROCESSED_FLAG=false&quot;"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" show="false" value="&quot;C:/Users/lenovo/AppData/Local/Temp/Rar$EXa0.056/Talend-Studio-20200219_1130-V7.3.1/workspace/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" show="false" value="AUTO"/>
+    <elementParameter field="TEXT" name="LABEL" value="UPDATE_PROCESSED_FLAG"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQuerySQLRow_6"/>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQuerySQLRow_2" offsetLabelX="0" offsetLabelY="0" source="tBigQuerySQLRow_2" target="tBigQuerySQLRow_5">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk7"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tBigQueryInput_2" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_2" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="CATEGORY_KEY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="JOURNAL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EDW_CREATEDDATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EDW_UPDATEDDATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PROCESSED_FLAG"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="UPDATED_FLAG"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DELETED_FLAG"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DECISIONID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="HIDE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DECISIONFAMILYID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="REVIEWER_NOTIFICATION_LETTER_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DSTATUSID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LETTERID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="JOURNALf"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DSTATUSID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DAYSTOREVIEW"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DAYSTOREVISEFIRSTREV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MINREVREQD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DAYSTOREVISESUBREV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NUMDAYS_UNINVITE_AFTER_REVIEW_DUEDATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="USE_DAYS_TO_REVISE_BY_DECISION_TERM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AUTHOR_QUESTIONNAIREID_NEW"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EDITORIAL_WORKFLOW_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AUTHOR_QUESTIONNAIREID_REV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Row_LastModified_TimeStamp"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QUESTIONNAIREIDREV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QUESTIONNAIREIDNEW"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ROLEFAMILY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_2" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_2" target="tBigQuerySQLRow_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tBigQueryOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="JOURNAL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EDW_CREATEDDATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EDW_UPDATEDDATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PROCESSED_FLAG"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="UPDATED_FLAG"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DELETED_FLAG"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CURRENT_REVISION_FLAG"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DECISIONID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="HIDE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DECISIONFAMILYID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="REVIEWER_NOTIFICATION_LETTER_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DSTATUSID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LETTERID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DSTATUSID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DAYSTOREVIEW"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AUTHOR_QUESTIONNAIREID_NEW"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DAYSTOREVISEFIRSTREV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MINREVREQD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EDITORIAL_WORKFLOW_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DAYSTOREVISESUBREV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AUTHOR_QUESTIONNAIREID_REV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NUMDAYS_UNINVITE_AFTER_REVIEW_DUEDATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QUESTIONNAIREIDREV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QUESTIONNAIREIDNEW"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="USE_DAYS_TO_REVISE_BY_DECISION_TERM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STATUS_KEY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ROLEFAMILY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DISPOSITION_FLAG"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DISPOSITION"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="8" metaname="tBigQueryInput_4" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_4" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="STATUS_KEY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="JOURNAL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DSTATUSID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tBigQueryInput_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
+  </connection>
+  <connection connectorName="FLOW" label="row9" lineStyle="0" metaname="tBigQueryInput_1" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_1" target="tJavaRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Startdate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SurrogateKey"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row9"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_1" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_1" target="tRunJob_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tBigQuerySQLRow_3" offsetLabelX="0" offsetLabelY="0" source="tBigQuerySQLRow_3" target="tBigQuerySQLRow_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQuerySQLRow_1" offsetLabelX="0" offsetLabelY="0" source="tBigQuerySQLRow_1" target="tBigQuerySQLRow_6">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk6"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQuerySQLRow_2"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Initial Load"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_2"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Load data from Datalake To Datawarehouse"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_1"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Store MAX_Surrogate_Key"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQuerySQLRow_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQuerySQLRow_5"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQuerySQLRow_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQuerySQLRow_4"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQuerySQLRow_6"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6df143fa-bea0-40f8-b9ec-7b11fa73b35e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7vrvNA7tltyARseFFuXZvkpusUCxIyeuAotOkgfe04uLDkcqEfif42J6tXSzs5PsL4WbzVWUtD6J&#13;
+dF4L/joAXg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1921c3e5-7523-447d-b160-114249ba9371"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>LGWesLDVSoUaKjqSDGfdJruldf8+/lGMX2uuqO39Nd6iI1woL88ByqruwKO77TKNBKLM64kVV13v&#13;
++xYDEdGgYQ==</DigestValue></Reference></SignedInfo><SignatureValue>KtIDL0Wf2opm025xtABwlwQuJhAazzyVP6/erGOGjhP/7gnR2y4DUjSdOSZNta2f8Z1OmlI0P6+n&#13;
+I5iaROroCoZTPT45PWxy/BgeIcH7EN9Hv8rkLC1deubtMxlNKb4N07/sER2maaLnjzf8VxlUw23b&#13;
+POoxlNMd7T/AOcV7t3L3YHQsqPU3cdIQ3on7ftI0pju5S/0j331opoDc7SmvQN3WqAGYTekWZG34&#13;
++iiD7nikO9Yp55SqeMSZvhY/bAoDv8EslmGKbfT1CKimWY9+QNtl75Y5DBy7BuJTFgPtYY7o1LlB&#13;
+QiAGXeUDVsRjIIpDL15tgoHuwVL5NrHVGr5Inw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1921c3e5-7523-447d-b160-114249ba9371" Target="#_6df143fa-bea0-40f8-b9ec-7b11fa73b35e"><Timestamp>2020-06-17 07:37:02</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
