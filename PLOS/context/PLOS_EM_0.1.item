@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_RoNfQLBtEeqKIagzToqdcg">
+    <contextParameter comment="" name="PLOS_EM_Database" prompt="PLOS_EM_Database?" promptNeeded="false" type="id_String" value="" xmi:id="_RoNfQbBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_EM_Login" prompt="PLOS_EM_Login?" promptNeeded="false" type="id_String" value="mother" xmi:id="_RoNfQrBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_EM_Password" prompt="PLOS_EM_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:UgzwmEdGZ2IdGrIvgzzPEr8+7jxWQQVi7vafqjo1rM+K0g==" xmi:id="_RoNfQ7BtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_EM_Schema" prompt="PLOS_EM_Schema?" promptNeeded="false" type="id_String" value="" xmi:id="_RoNfRLBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_EM_Port" prompt="PLOS_EM_Port?" promptNeeded="false" type="id_String" value="" xmi:id="_RoNfRbBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_EM_AdditionalParams" prompt="PLOS_EM_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_RoNfRrBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_EM_Server" prompt="PLOS_EM_Server?" promptNeeded="false" type="id_String" value="customerreporting.editorialmanager.com:11000" xmi:id="_RoNfR7BtEeqKIagzToqdcg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Test" xmi:id="_RoNfSLBtEeqKIagzToqdcg">
+    <contextParameter comment="" name="PLOS_EM_Database" prompt="PLOS_EM_Database?" promptNeeded="false" type="id_String" value="" xmi:id="_RoNfSbBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_EM_Login" prompt="PLOS_EM_Login?" promptNeeded="false" type="id_String" value="mother" xmi:id="_RoNfSrBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_EM_Password" prompt="PLOS_EM_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:SjRMC+SUa1huNImgc8Oq/urHqDQONax+zTQ8xI1KiSNeeA==" xmi:id="_RoNfS7BtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_EM_Schema" prompt="PLOS_EM_Schema?" promptNeeded="false" type="id_String" value="" xmi:id="_RoNfTLBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_EM_Port" prompt="PLOS_EM_Port?" promptNeeded="false" type="id_String" value="" xmi:id="_RoNfTbBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_EM_AdditionalParams" prompt="PLOS_EM_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_RoNfTrBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_EM_Server" prompt="PLOS_EM_Server?" promptNeeded="false" type="id_String" value="customerreporting.editorialmanager.com:11000" xmi:id="_RoNfT7BtEeqKIagzToqdcg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Prod" xmi:id="_RoNfULBtEeqKIagzToqdcg">
+    <contextParameter comment="" name="PLOS_EM_Database" prompt="PLOS_EM_Database?" promptNeeded="false" type="id_String" value="" xmi:id="_RoNfUbBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_EM_Login" prompt="PLOS_EM_Login?" promptNeeded="false" type="id_String" value="speedy" xmi:id="_RoNfUrBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_EM_Password" prompt="PLOS_EM_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:fx/IcdXHxLL/u3nBPAiZp49DrC00lNCXHs1lnttcAxftnnxx" xmi:id="_RoNfU7BtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_EM_Schema" prompt="PLOS_EM_Schema?" promptNeeded="false" type="id_String" value="" xmi:id="_RoNfVLBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_EM_Port" prompt="PLOS_EM_Port?" promptNeeded="false" type="id_String" value="" xmi:id="_RoNfVbBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_EM_AdditionalParams" prompt="PLOS_EM_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_RoNfVrBtEeqKIagzToqdcg"/>
+    <contextParameter comment="" name="PLOS_EM_Server" prompt="PLOS_EM_Server?" promptNeeded="false" type="id_String" value="customerreporting.editorialmanager.com:12000" xmi:id="_RoNfV7BtEeqKIagzToqdcg"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_148bc272-259d-494a-824a-a84a7ef236c5"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kqujWKot0xNUU8/7gAuLAikaZEfVZcjBN2SeQFU/53DPptDR+EN1asR83fBpou0IBcls3rNvsJrl&#13;
+9RwiJSkUTA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_00a3d37a-f485-4912-b0f0-f5cb44f0736c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>X5Jn6rf0QIjQE21UYU7jtzExdOUWsW/xDYuc3fWhwobmFVjnVshwWnQwgtCcjFVbAX+tB7N1RIXF&#13;
+q+YAmvTblw==</DigestValue></Reference></SignedInfo><SignatureValue>c+kyZdrO2pyh1uBNbf5nqxy6VkRhoiYHZrlHsSP5F/Gff6WcG8PrqChbauH2h1/0mDlEiic+wtuY&#13;
+LFWxN+zzyWa8Pzn0s98T7ehQFfe97HTGY3PaTP38YdLLgqagswHiVMIw2nZ4vkKuxnEtlxkpimq9&#13;
+63jzCiwOHf/gQfv5PArqKHEkMVLwhzwyUT58sZGzQXE5scEJhcV9Lpk5C2No4R34FJSg/ScbsvbD&#13;
+W5Q44i1l753JHuseCpVgw7oMcoMMSRPRbKS6vOXYV+IxeWesLtJTxGtigG3TiDAJnVgysT0k1L9+&#13;
+qmw0Kix/PhJaOZ3kaMrpVm5U1dF+LeFkiEgRgQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_00a3d37a-f485-4912-b0f0-f5cb44f0736c" Target="#_148bc272-259d-494a-824a-a84a7ef236c5"><Timestamp>2020-06-17 08:12:19</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
